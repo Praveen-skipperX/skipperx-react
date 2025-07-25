@@ -18,7 +18,7 @@ const LaunchSection = () => {
             <em>Programs</em>
           </h3>
           <p>Next-gen learning designed to launch your career.</p>
-          <button className="launch-btn">Join Waiting list</button>
+          <button className="launch-btn">Explore Programs</button>
         </div>
 
         {/* Right Animated Background + Card */}
@@ -39,6 +39,16 @@ const LaunchSection = () => {
                     "DevOps",
                     "Product Design",
                     "AR/VR",
+                    "Data Science",
+                    "Data Analyst",
+                    "UI/UX",
+                    "Web Dev",
+                    "Cybersecurity",
+                    "AI/ML",
+                    "Cloud",
+                    "DevOps",
+                    "Product Design",
+                    "AR/VR",
                     "Data Science"
                   ].map((text, idx) => (
                   <div className="block" key={idx}>{text}</div>
@@ -47,10 +57,10 @@ const LaunchSection = () => {
             ))}
           </div>
 
-          {/* Gradient Overlay */}
+          
           <div className="launch-gradient-overlay"></div>
 
-          {/* Right Card */}
+          
           <div className="right-card">
             <div className="tag">⭐ Your Mini Gold Mine</div>
             <p className="starting-text">Starting at just</p>

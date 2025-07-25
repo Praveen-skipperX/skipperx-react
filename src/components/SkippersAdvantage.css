@@ -1,5 +1,5 @@
-.skippers-section {
-  padding: 30px 20px 30px 20px;
+.skippers-sectioned {
+  padding: 64px 20px 64px 20px;
   background-color: rgb(30, 30, 30);
   color: #fff;
   text-align: center;
@@ -34,7 +34,7 @@
 .subtitle {
   color: #aaa;
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 56px;
 }
 
 
@@ -72,7 +72,7 @@
   background: linear-gradient(to right,  #fffdfd 20%,#ede7e7 20%, #313030 70%);
   border: none;
   opacity: 0.4;
-  max-width: 270px;
+  max-width: 285px;
   margin-top: 30px;
 }
 
@@ -82,7 +82,7 @@
   background: linear-gradient(to left,  #fffdfd 20%,#ede7e7 20%, #313030 70%);
   border: none;
   opacity: 0.4;
-  max-width: 270px;
+  max-width: 285px;
   margin-top: 25px;
 }
 .overlayy {

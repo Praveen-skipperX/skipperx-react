@@ -9,9 +9,8 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="left-section">
         <img src={logo} alt="Skipper Logo" className="logo-img" />
-
+        
         <div className={`nav-linkss ${open ? 'show' : ''}`}>
-          {/* Learn with Dropdown */}
           <div className="nav-item dropdown">
             Learn <span className="arrow">▾</span>
             <div className="dropdown-menu">

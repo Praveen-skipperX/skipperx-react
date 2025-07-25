@@ -7,7 +7,7 @@ const testimonials = [
     image: "shivansh1.png",
     quote: "SkipperX truly polished my skills and helped me take on more complex challenges with confidence. The impact on my tech journey has been massive.",
     logoSize: { width: "80px", height: "65px" },
-    imageSize: { width: "296px", height: "349px" }
+    imageSize: { width: "256px", height: "349px" }
   },
   {
     name: "Rohan Kumar",
@@ -27,7 +27,7 @@ const testimonials = [
     image: "ash.png",
     quote: "SkipperX has a well-designed curriculum that helped me upskill in my core domain of Product Management. It’s highly relevant to today’s industry needs.",
     logoSize: { width: "40px", height: "49px" },
-    imageSize: { width: "270px", height: "304px" }
+    imageSize: { width: "230px", height: "304px" }
   },
   {
     name: "Manan Singhal",

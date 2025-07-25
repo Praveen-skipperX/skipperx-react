@@ -4,7 +4,7 @@ import isroLogo from '../assets/isro-logo.png';
 import amanImage from '../assets/aman-gupta.png';
 import zah from '../assets/zah.png';
 import zahc from '../assets/zahc.png';
-import ramya from '../assets/ramyaa.png';
+import ramya from '../assets/ramyaaa.png';
 import akhil from '../assets/akhil.png';
 import akhilc from '../assets/akhilc.png';
 
@@ -90,7 +90,7 @@ const BackedByBest = () => {
       if (!isHovered.current) {
         next();
       }
-    }, 3500);
+    }, 2500);
   };
 
   const stopAutoSlide = () => {
@@ -123,8 +123,8 @@ const BackedByBest = () => {
 
       <div
         className="best-carousel-wrapper"
-        onMouseEnter={pauseAutoSlide}
-        onMouseLeave={resumeAutoSlide}
+        //onMouseEnter={pauseAutoSlide}
+        //onMouseLeave={resumeAutoSlide}
       >
         <button className="best-arrow left" onClick={prev}>&#10094;</button>
         <div

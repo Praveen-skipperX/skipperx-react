@@ -10,6 +10,7 @@ import EngineeringPrograms from '../components/EngineeringPrograms';
 import SuperStack from '../components/SuperStack';
 import CareerFormSection from '../components/CareerFormSection';
 import SkippersAdvantage from '../components/SkippersAdvantage';
+import Circle from '../components/Circle';
 import LaunchSection from '../components/LaunchSection';
 import BackedByBest from '../components/BackedByBest';
 import WhyTrustUs from '../components/WhyTrustUs';
@@ -26,6 +27,7 @@ const Home = () => {
       <SuperStack />
       <CareerFormSection />
       <SkippersAdvantage />
+      <Circle />
       <LaunchSection />
       <BackedByBest />
       <WhyTrustUs />

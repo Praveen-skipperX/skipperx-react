@@ -1,5 +1,5 @@
 .stack-wrapper {
-  padding: 40px 20px 40px 20px;
+  padding: 64px 20px 64px 20px;
   background: rgb(30, 30, 30);
   font-family: 'Poppins', sans-serif;
   color: white;
@@ -10,7 +10,8 @@
   font-size: 38px;
   font-weight: 600;
   font-family: Playfair Display;
-  margin-bottom: 40px;
+  margin-bottom: 56px;
+  margin-top: -10px;
 }
 
 .highlight-text {
@@ -20,7 +21,7 @@
 
 .stack-card-container {
   display: flex;
-  gap: 17px;
+  gap: 10px;
   flex-wrap: wrap;
   padding-right: 10px;
   justify-content: center;
@@ -28,7 +29,7 @@
 
 .stack-box {
   position: relative;
-  width: 350px;
+  width: 358px;
   height: 329px;
   border-radius: 8px;
   background-size: cover;

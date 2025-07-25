@@ -34,10 +34,10 @@ const cards = [
 
 const SkippersAdvantage = () => {
   return (
-    <section className="skippers-section">
+    <section className="skippers-sectioned">
       <div className="header-line">
         <div className="le" />
-        <h2>Get the <span className="highlight">Skippers</span> Advantage</h2>
+        <h2>Get the <span className="highlight">Skipperx</span> Advantage</h2>
         <div className="rig" />
       </div>
       <p className="subtitle">

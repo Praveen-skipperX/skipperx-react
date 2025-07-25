@@ -1,13 +1,13 @@
 .trust-wrapper {
   background: 1C1C1C;
   color: white;
-  padding: 128px 20px 128px 20px;
+  padding: 128px 120px 64px 120px;
   text-align: center;
 }
 
 .accredited-text {
   font-size: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-family: Playfair Display;
   font-style: bold italic;
   margin-top: -10px;
@@ -24,8 +24,29 @@
 .partner-logo {
   max-width: 160px;
   height: auto;
+  border: 2px solid #888;
+  border-radius: 8px;
 }
 
+.im0{
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+}
+.im1{
+  width: 22px;
+  height: 21px;
+  margin-bottom: -3px;
+  margin-right: 5px;
+}
+
+.im2{
+  width: 23px;
+  height: 25px;
+  margin-bottom: -5px;
+  margin-right: 5px;
+}
 .size{
     color: #020202;
 }
@@ -42,7 +63,7 @@
 .trust-box h2 {
   font-size: 38px;
   font-style: bold;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   font-family: Playfair Display;
 }
 
@@ -56,11 +77,11 @@
   font-size: 20px;
   font-style: poppins;
   color: #9A9A9A;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
 }
 .trust-box p {
   font-size: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-style: poppins;
   opacity: 0.85;
 }
@@ -68,12 +89,15 @@
 .trust-stats {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 23px;
-  line-height: 25px;
-  font-size: 17px;
+  margin-bottom: 58px;
+  margin-top: 32px;
+  line-height: 29px;
+  font-size: 28px;
   text-align: center;
 }
-
+.gr{
+  font-size: 20px;
+}
 .trust-stats > div {
   flex: 1;
   padding: 0 20px;
@@ -85,9 +109,10 @@
   content: "";
   position: absolute;
   right: 0;
-  top: 5%;
+  top: -10%;
   bottom: 5%;
-  width: 1px;
+  width: 1.5px;
+  height: 81px;
   background: #DDE3E3; 
   opacity: 0.5;
 }

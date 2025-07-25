@@ -4,6 +4,9 @@ import skillIndia from '../assets/skill-india.png';
 import nsdc from '../assets/nsdc.png';
 import startupIndia from '../assets/startup-india.png';
 import googleEd from '../assets/google-edu.png';
+import im0 from "../assets/im0.svg";
+//import im1 from "../assets/im1.svg";
+//import im2 from "../assets/im2.svg";
 
 const partners = [skillIndia, nsdc, startupIndia, googleEd];
 
@@ -36,12 +39,12 @@ const TrustSection = () => {
         <h2>
           Trusted by <span className="highlight">12,000+</span> Builders, Doers & Innovators
         </h2>
-        <p><span className="tp">who chose Skipper to upskill, pivot, and lead in the modern workplace.</span></p>
+        <p><span className="tp">Who choose Skipperx to upskill, pivot, and lead in the modern workplace.</span></p>
 
         <div className="trust-stats">
-          <div><strong>4.8 ⭐</strong><br />Google Rating</div>
-          <div><strong>👥 50K+</strong><br />Mentees Trained</div>
-          <div><strong>🔁 42%</strong><br />Career Switchers</div>
+          <div><strong >4.8 <img src={im0} className="im0" /></strong><br /><span className="gr">Google Rating</span></div>
+          <div><strong > 50K+</strong><br /><span className="gr">Mentees Trained</span></div>
+          <div><strong > 42%</strong><br /><span className="gr">Career Switchers</span></div>
         </div>
 
 

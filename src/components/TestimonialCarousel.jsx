@@ -78,18 +78,18 @@ const TestimonialCarousel = () => {
         <span className="highlight">Best</span>{" "}
         <span className="righttt" />
       </h2>
-      <p className="subtitle">Not Just Students – Leaders Learn from Us Too</p>
+      <p className="subtitlee">Not Just Students – Leaders Learn from Us Too</p>
 
       <div
         className="carousel-wrapper"
-        onMouseEnter={() => {
-          isHovered.current = true;
-          stopAutoPlay();
-        }}
-        onMouseLeave={() => {
-          isHovered.current = false;
-          startAutoPlay();
-        }}
+        // onMouseEnter={() => {
+        //   isHovered.current = true;
+        //   stopAutoPlay();
+        // }}
+        // onMouseLeave={() => {
+        //   isHovered.current = false;
+        //   startAutoPlay();
+        // }}
       >
         <button className="nav prev" onClick={prevSlide}>
           ‹
@@ -149,9 +149,9 @@ const TestimonialCarousel = () => {
           <img src={hari} alt="avatar" />
           <img src={sakshi} alt="avatar" />
           <img src={sai} alt="avatar" />
-          <span>Be one of them</span>
+          <span>4K+ members have completed this program, be one of them</span>
         </div>
-        <button className="avabtn">Apply Now</button>
+        <button className="avabtn">Explore Programs</button>
       </div>
     </section>
   );

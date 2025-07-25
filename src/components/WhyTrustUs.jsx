@@ -64,8 +64,8 @@ const WhyTrustUs = () => {
   const goPrev = () => setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 
   useEffect(() => {
-    if (paused) return;
-    const interval = setInterval(goNext, 2500);
+    //if (paused) return;
+    const interval = setInterval(goNext, 2000);
     return () => clearInterval(interval);
   }, [paused]);
 
