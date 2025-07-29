@@ -19,7 +19,7 @@ import nineseven from "../assets/97.png";
 import eigth from "../assets/88.png";
 import nineone from "../assets/91.png";
 
-
+import heroBg from "../assets/112233332211.png";
 
 
 const modules = [
@@ -120,6 +120,10 @@ const DroneEngineering = () => {
   return (
     <>
       <Navbar />
+
+
+
+      
       <div className='dronebody'>
         <div
           className="drone-engineering-section"
