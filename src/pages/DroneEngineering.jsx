@@ -128,7 +128,7 @@ const DroneEngineering = () => {
         <div
           className="drone-engineering-section"
           style={{
-            backgroundImage: `linear-gradient(to right,rgba(35, 33, 33, 0.6),rgba(51, 28, 90, 0.6)), url(${bgImage})`,
+            backgroundImage: `linear-gradient(to right,rgba(35, 33, 33, -0.6),rgba(51, 28, 90, -0.6)), url(${bgImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -288,6 +288,7 @@ const DroneEngineering = () => {
 
 
             <div className="drone-testimonial-box">
+              <h2 className="robot-heading">Learning That<span className="highlight"> Works</span> - Proven by People</h2>
               <div className="drone-testimonial-person">
                 <img src={require('../assets/droneashish.png')} alt="Ashish Singhal" />
                 <div className="drone-testimonial-name">
@@ -318,11 +319,11 @@ const DroneEngineering = () => {
                   {[
                     { tag: 'Aviation', title: 'Aerospace Engineering', desc: 'for designing and testing aerial systems.' },
                     { tag: 'Security', title: 'Defense & Surveillance', desc: 'for drone-based reconnaissance and security operations.' },
-                    { tag: 'Relief', title: 'Disaster Management', desc: 'Supporting rescue missions, damage assessment, and supply delivery.' },
-                    { tag: 'Media', title: 'Filmmaking', desc: 'capturing cinematic shots and live coverage, on air.' },
+                    { tag: 'Relief', title: 'Disaster Management', desc: 'Supporting rescue missions and supply delivery.' },
+                    { tag: 'Media', title: 'Filmmaking & Handling  ', desc: 'capturing cinematic shots and live coverage, on air.' },
                     { tag: 'Agriculture', title: 'AgroTech', desc: 'using drones for crop monitoring and precision farming.' },
-                    { tag: 'Logistics', title: 'Parcel Delivery', desc: 'enabling last-mile drone-based delivery systems.' },
-                    { tag: ' Conservation', title: 'Environmental Research', desc: 'Tracking wildlife, mapping terrains, and monitoring climate impact.' }
+                    { tag: 'Logistics', title: ' Parcel  Delivery', desc: 'enabling last-mile drone-based delivery systems.' },
+                    { tag: ' Conservation', title: 'Environmental Research', desc: 'Tracking wildlife,terrains and monitoring climate impact.' }
                   ].map((item, i) => (
                     <div className="drone-built-card" key={i}>
                       <span className="built-tag">{item.tag}</span>
@@ -553,7 +554,7 @@ const DroneEngineering = () => {
           <div className="offer-price-box">
             <span className="offer-icon">⚡</span>
             <span className="offer-old-price">₹24,999/-</span>
-            <span className="offer-new-price">₹22,999/-</span>
+            <span className="offer-new-price">₹20,000/-</span>
           </div>
 
           <p className="offer-subtext">The Clock’s Ticking — Ends In</p>
@@ -751,28 +752,28 @@ const DroneEngineering = () => {
           <div className="faq-list">
             {[
               {
-                question: "What skills will I gain from this program?",
-                answer: "You'll gain practical knowledge in drone assembly, electronics, aerodynamics, and real-time flight control, along with sensor integration and troubleshooting."
+                question: "Is technical support available if I encounter issues with the online platform?",
+                answer: "Our dedicated support team is just a call or an email away. Reach out to us at 8792243559 / 8147081557 or support@corizo.in from Monday to Saturday, 11 AM to 8 PM, for any assistance you need!"
               },
               {
-                question: "Do I need prior experience with drones?",
-                answer: "No prior experience is needed. This course is beginner-friendly and guides you step-by-step from basics to advanced topics."
+                question: "Are there discussion forums or community platforms for students?",
+                answer: "Join the vibrant community on WhatsApp! Engage, discuss, and grow with fellow learners and mentors by your side."
               },
               {
-                question: "Is there a certificate after completion?",
-                answer: "Yes! You'll receive a SkipperX certificate upon successful completion of the program, which is industry-recognized."
+                question: "Is there a pre-registration option available?",
+                answer: "Get ahead of the curve with a nominal pre-registration fee of ₹1000. Secure your spot and start transforming your career trajectory!"
               },
                {
-                question: "Is there a certificate after completion?",
-                answer: "Yes! You'll receive a SkipperX certificate upon successful completion of the program, which is industry-recognized."
+                question: "What is the refund policy?",
+                answer: "Our courses are crafted with care and commitment, and as such, we do not offer refunds. We believe in the value and quality of our educational services!"
               },
               {
-                question: "Can I build a real flying drone?",
-                answer: "Absolutely! You will build, test, and fly your own drone using the kit provided as part of the course."
+                question: "How much time do I need to dedicate to the course each week?",
+                answer: "Whether you’re sprinting or pacing yourself, choose what works for you! We offer both self-paced and mentor-led formats to match your learning style."
               },
               {
-                question: "How do I get support during the program?",
-                answer: "You’ll have access to expert mentors, WhatsApp support groups, and community forums for all your questions."
+                question: "What are the timings of the classes ?",
+                answer: "Classes are tailored for convenience, kicking off after 6 PM to suit your busy schedules and commitments. Dive in when you're ready to learn!"
               }
             ].map((item, index) => (
               <div className="faq-card" key={index}>

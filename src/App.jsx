@@ -9,6 +9,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import RefundPolicy from './pages/RefundPolicy';
 import About from './pages/About';
 import DroneEngineering from './pages/DroneEngineering';
+import RobotEngineering from './pages/RobotEngineering';
 
 
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/t & c" element={<TermsAndConditions />} />
         <Route path="/Drone-Engineering" element={<DroneEngineering />} />
+        <Route path="/Robot-Engineering" element={<RobotEngineering />} />
 
       </Routes>
 

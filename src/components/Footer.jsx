@@ -30,7 +30,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      
 
+      
         <div className="footer-sections">
           <div className="footer-column">
             <h4>Company</h4>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import logo from '../assets/toplogo1.png';
+import logo from '../assets/skipper-black.png';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -12,7 +12,7 @@ const Navbar = () => {
         
         <div className={`nav-linkss ${open ? 'show' : ''}`}>
           <div className="nav-item dropdown">
-            Learn <span className="arrow">▾</span>
+            <span className="navbar-learn">Learn </span><span className="arrow">▾</span>
             <div className="dropdown-menu">
               <div className="dropdown-item">Courses</div>
               <div className="dropdown-item">Projects</div>
@@ -22,7 +22,7 @@ const Navbar = () => {
 
           {/* Become a Member with Dropdown */}
           <div className="nav-item dropdown">
-            Become a <span className="highlight">member</span> <span className="arrow">▾</span>
+            <span className="navbar-member">Become a <span className="highlight">member</span> <span className="arrow">▾</span></span>
             <div className="dropdown-menu">
               <div className="dropdown-item">Membership Plans</div>
               <div className="dropdown-item">Benefits</div>
@@ -30,7 +30,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <span className="nav-item">About</span>
+          <span className="nav-item"><span className="navbar-member">About</span></span>
         </div>
       </div>
 

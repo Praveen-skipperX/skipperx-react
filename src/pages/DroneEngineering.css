@@ -1,7 +1,6 @@
 .dronebody {
   background-color: #1C1C1C;
-  
-  padding: 64px 120px 64px 55px;
+  padding: 4px 120px 64px 55px;
 }
 
 .accredit{
@@ -455,7 +454,7 @@
 .drone-testimonial-box {
   display: flex;
   gap: 15px;
-  margin-top: 56px;
+  margin-top: 6px;
   align-items: stretch;
   flex-wrap: wrap;
 }
@@ -988,6 +987,7 @@
   border-radius: 8px;
   display: inline-block;
   margin-bottom: 33px;
+  margin-top: 5px;
 }
 
 .drone-built-card h4 {
@@ -2060,6 +2060,7 @@
 .faq-answer {
   margin-top: 10px;
   font-size: 14px;
+  width: 900px;
   line-height: 1.6;
   color: #a7a7a7;
   margin-bottom: 10px;
