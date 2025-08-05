@@ -10,6 +10,8 @@ import RefundPolicy from './pages/RefundPolicy';
 import About from './pages/About';
 import DroneEngineering from './pages/DroneEngineering';
 import RobotEngineering from './pages/RobotEngineering';
+import Login from './pages/login';
+
 
 
 
@@ -29,6 +31,7 @@ function App() {
         <Route path="/t & c" element={<TermsAndConditions />} />
         <Route path="/Drone-Engineering" element={<DroneEngineering />} />
         <Route path="/Robot-Engineering" element={<RobotEngineering />} />
+        <Route path="/login" element={<Login />} />
 
       </Routes>
 

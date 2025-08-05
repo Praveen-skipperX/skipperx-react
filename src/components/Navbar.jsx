@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="left-section">
-        <img src={logo} alt="Skipper Logo" className="logo-img" />
+        <a href='/'><img src={logo} alt="Skipper Logo" className="logo-img" /></a>
         
         <div className={`nav-linkss ${open ? 'show' : ''}`}>
           <div className="nav-item dropdown">
@@ -36,7 +36,7 @@ const Navbar = () => {
       </div>
 
       <div className={`nav-buttons ${open ? 'show' : ''}`}>
-        <button className="btn black">Login</button>
+        <button className="btn black"><Link to="/login" className="navlink" >Login</Link></button>
         <button className="btn white">Contact Us</button>
       </div>
 

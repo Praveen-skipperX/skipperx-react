@@ -27,7 +27,7 @@ const Footer = () => {
       <div className="footer-content">
 
         <div className="footer-left">
-          <img src={logo} alt="Skipper Logo" className="footer-logo" />
+          <a href='/'><img src={logo} alt="Skipper Logo" className="footer-logo" /></a>
           <p>SkipperX is a premium online learning platform serving graduates, senior professionals in business, tech, and 
             design, and anyone looking to upgrade their job profile.</p>
 
