@@ -2,48 +2,235 @@ import React from 'react';
 import './About.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import heroBg from "../assets/about-hero.png";
+import bgImage from "../assets/about-x.png";
+import founder1 from "../assets/founder1.png";
+import founder2 from "../assets/founder1.png";
+import founder3 from "../assets/founder1.png";
+import founder4 from "../assets/founder1.png";
+import img1 from "../assets/about-last1.png";
+import img2 from "../assets/about-last2.png";
+import missionImg from "../assets/missionImg.png";
+import visionImg from "../assets/visionImg.png";
+import image1 from "../assets/about-beyond.png";
+import image2 from "../assets/sakshi-about.png";
+import image3 from "../assets/about-beyond.png";
+import image4 from "../assets/about-beyond.png";
+import image5 from "../assets/about-beyond.png";
+import image6 from "../assets/Hari.jpg";
+
+
+const teamMembers = [
+  { name: "Pratyush Singh", position: "Software Engineer", image: image1, className: "member-card1",quote: "Building scalable web solutions" },
+  { name: "Sakshi Gupta", position: "Product Designer", image: image2, className: "member-card2" ,quote: "Building scalable web solutions"},
+  { name: "Ravi Kumar", position: "Frontend Developer", image: image3, className: "member-card3" ,quote: "Building scalable web solutions"},
+  { name: "Anjali Mehta", position: "Backend Developer", image: image4, className: "member-card4" ,quote: "Building scalable web solutions"},
+  { name: "Vikas Sharma", position: "Data Scientist", image: image5, className: "member-card5" ,quote: "Building scalable web solutions"},
+  { name: "Neha Verma", position: "UI/UX Designer", image: image6, className: "member-card6" ,quote: "Building scalable web solutions"},
+  { name: "Pratyush Singh", position: "Software Engineer", image: image1, className: "member-card1" ,quote: "Building scalable web solutions"},
+  { name: "Sakshi Gupta", position: "Product Designer", image: image2, className: "member-card2" ,quote: "Building scalable web solutions"},
+  { name: "Ravi Kumar", position: "Frontend Developer", image: image3, className: "member-card3" ,quote: "Building scalable web solutions"},
+  { name: "Anjali Mehta", position: "Backend Developer", image: image4, className: "member-card4" ,quote: "Building scalable web solutions"},
+  { name: "Vikas Sharma", position: "Data Scientist", image: image5, className: "member-card5" ,quote: "Building scalable web solutions"},
+  { name: "Neha Verma", position: "UI/UX Designer", image: image6, className: "member-card6" ,quote: "Building scalable web solutions"},
+  { name: "Vikas Sharma", position: "Data Scientist", image: image5, className: "member-card5" ,quote: "Building scalable web solutions"},
+  { name: "Neha Verma", position: "UI/UX Designer", image: image6, className: "member-card6" ,quote: "Building scalable web solutions"},
+  { name: "Pratyush Singh", position: "Software Engineer", image: image1, className: "member-card1" ,quote: "Building scalable web solutions"},
+  
+];
+
+
+const founders = [
+  { name: "Himanshu Singh", role: "Co-Founder & CMO", image: founder1 },
+  { name: "Sourav Kamboj", role: "Co-Founder and CEO", image: founder2 },
+  { name: "Vivek Agarwal", role: "Co-Founder and COO", image: founder3 },
+  { name: "Hemanth Ingle", role: "Co-Founder and VP", image: founder4 },
+];
+
+
 
 const About = () => {
   return (
     <>
       <Navbar />
-      <div className="about-container">
-        <h1>About Us</h1>
-
-        <h2>What Drives Us</h2>
-        <p>At SkipperX, We Don’t Just Follow The Future — We Build It.</p>
-        <p>
-          We Believe Traditional Learning Models Can’t Keep Pace With A Rapidly Evolving World. So, We Set Out To Create Something Different — A Platform Where Innovation Meets Education, And Learners Become Pioneers.
-        </p>
-        <p>SkipperX Is Your Launchpad Into The Future Of Tech.</p>
-        <p>
-          We Design Industry-Relevant Programs In Collaboration With Top Experts And Engineers, Focusing On Today’s Most Dynamic Fields — From AR/VR And Drone Technology To Robotics And Future Mobility.
-        </p>
-        <p>Our Learning Experiences Are Not Bound By Textbooks.</p>
-        <p>
-          They Are Immersive, Project-Based, And Built Around Skills That Companies Are Actively Hiring For. Whether You’re A Curious Learner, A Passionate Builder, Or Someone Ready To Shift Careers, SkipperX Is Built For You.
-        </p>
-        <p>
-          We Equip You With Real-World Tools And Thinking Frameworks That Empower You To Create, Explore, And Lead — Not Just Participate.
-        </p>
-
-        <h2>Why SkipperX?</h2>
-        <ul>
-          <li>✓ Trending Tech Programs</li>
-          <li>✓ Hands-On Projects & Kits (Like Drone Kits, Robotics Models)</li>
-          <li>✓ Mentorship From Industry Leaders</li>
-          <li>✓ Future-Forward Curriculum</li>
-          <li>✓ Active Peer Community</li>
-        </ul>
-
-        <p className="mission-lead">
-          Our Mission Is Bold But Clear:  
-          <br />
-          <span className="highlight">
-            To Spark Curiosity, Unlock Potential, And Shape Tomorrow’s Innovators.
-          </span>
-        </p>
+      <div className="about-hero-section" style={{ backgroundImage: `url(${heroBg})` }}>
+        <div className="about-hero-overlay">
+          <h1 className="about-hero-title">
+            They Came with Curiosity, We Gave <br /> Them Real Skills
+          </h1>
+          <p className="about-hero-subtitle">
+            Training future pros who actually get hired
+          </p>
+          <button className="about-hero-btn">Explore Programs</button>
+        </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div
+          className="about-quote-section"
+          //style={{ backgroundImage: `url(${bgImage})`}}
+        >
+          <div className="about-quote-content">
+            <div className="quote-icon">❝</div>
+            <p className="quote-text">
+              We started SkipperX with one simple belief — that real-world tech skills should be accessible to every curious mind, not just a privileged few.
+            </p>
+            <p className="sub-quote">
+              They Asked for More Than Lectures. So We Built SkipperX.
+            </p>
+            <hr className="divider" />
+            <p className="highlight-text-about">
+              SkipperX is highly recommended for students, working professionals, and entrepreneurs who are eager to master emerging technologies and build career-defining projects.
+            </p>
+
+            <div className="founders-list">
+              {founders.map((founder, i) => (
+                <div className="founder-card" key={i}>
+                  <img src={founder.image} alt={founder.name} />
+                  <h4>{founder.name}</h4>
+                  <span>{founder.role}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+       <div className="about-mission-vision">
+        <div className="mission-card">
+          <img src={missionImg} alt="Mission" className="mv-image" />
+          <div className="mv-content">
+            <div className="mv-heading">MISSION</div>
+            <p>
+              Our mission is to deliver high-impact programs that teach 
+              the skills the world is hiring for—across tech, business, and 
+              innovation. 
+            </p>
+            <p> We're here to help you upgrade your career, break into 
+              new roles, or build something of your own.
+            </p>
+            <p>
+              With every learner, our goal is clear: help 60–70% of them 
+              land better jobs, launch companies, or grow into leadership 
+              roles—faster, smarter, and with confidence.
+            </p>
+          </div>
+        </div>
+
+        <div className="vision-card">
+          <img src={visionImg} alt="Vision" className="mv-image" />
+          <div className="mv-content2">
+            <div className="mv-heading">VISION</div>
+            <p>
+              At SkipperX, we're building the most powerful career launchpad for 
+              ambitious professionals.
+            </p>
+            <p>
+              Our vision is to create a new standard of upskilling—where learners 
+              don't just learn, they transform.
+            </p>
+            <p>
+              Whether it’s landing top roles, switching industries, or launching 
+              startups, we exist to help people take the leap with skills that 
+              actually move the needle.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+     <div className="people-section">
+        <div className="people-header">
+          <hr className="gallery-line1" />
+            <h2 className="gallery-heading">The People behind<span className="highlight-about"> SkipperX</span></h2>
+            <hr className="gallery-line2" />
+        </div>
+        <p className="subtitle">
+          Insights from those who’ve walked the path you’re about to take.
+        </p>
+
+        <div className="people-grid1">
+          {teamMembers.map((member, index) => (
+            <div className={`people-card ${member.className}`} key={index}>
+              <img src={member.image} alt={member.name} className="people-img" />
+              <div className="people-info">
+                <h3>{member.name}</h3>
+                <p>{member.position}</p>
+              </div>
+              <div className="hover-overlay">{member.quote}</div>
+            </div>
+          ))}
+
+          <div className="people-card join-card">
+            <p>You Can be one of them</p>
+            <button className="join-btn">Join Our Team</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+        <div className="skipperx-gallery">
+          <div className="skipperx-gallery-title">
+            <hr className="gallery-line1" />
+            <h2 className="gallery-heading">Here’s what SkipperX is all about</h2>
+            <hr className="gallery-line2" />
+          </div>
+          <div className="skipperx-gallery-images">
+            <div className="gallery-image-container">
+              <img src={img1} alt="Award Ceremony" />
+            </div>
+            <div className="gallery-image-container">
+              <img src={img2} alt="Training Session" />
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
       <Footer />
     </>
   );

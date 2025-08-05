@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 import logo from '../assets/skipper-black.png';
 
 const Navbar = () => {
@@ -30,7 +31,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <span className="nav-item"><span className="navbar-member">About</span></span>
+          <span className="nav-item"><span className="navbar-member"><Link to="/about" className="navlink" >About</Link></span></span>
         </div>
       </div>
 

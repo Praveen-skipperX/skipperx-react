@@ -9,6 +9,11 @@
   z-index: 999;
 }
 
+.navlink {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
 .left-section {
   display: flex;
   align-items: center;

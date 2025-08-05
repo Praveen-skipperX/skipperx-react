@@ -1,12 +1,12 @@
 .dronebody {
   background-color: #1C1C1C;
-  
   padding: 34px 120px 64px 55px;
 }
 
 .accredit{
   background-color: #1C1C1C;
 }
+
 .drone-engineering-section {
   color: white;
   text-align: center;
@@ -99,7 +99,6 @@
   color: white;
   width: fit-content;
   display: inline;
-
   padding: 15px 20px;
   border-radius: 25px;
   font-size: 16px;
