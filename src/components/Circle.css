@@ -167,8 +167,8 @@
 
 .circle-label {
   position: absolute;
-  left: 270px; /* pull text outside to the left */
-  width: 150px; /* set width for centering */
+  left: 270px; 
+  width: 150px; 
   text-align: center;
   white-space: nowrap;
   color: white;
@@ -179,22 +179,23 @@
 }
 
 .label-11 {
-  top: 23px;
-}
-
-.label-22 {
-  top: 117px;
-  left: 250px;
-}
-
-.label-33 {
-  top: 210px;
+  top: 18px;
   left: 260px;
 }
 
+.label-22 {
+  top: 111px;
+  left: 240px;
+}
+
+.label-33 {
+  top: 200px;
+  left: 250px;
+}
+
 .label-44 {
-  top: 322px;
-  left: 255px;
+  top: 309px;
+  left: 245px;
 }
 
 

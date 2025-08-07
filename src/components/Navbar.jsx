@@ -36,8 +36,8 @@ const Navbar = () => {
       </div>
 
       <div className={`nav-buttons ${open ? 'show' : ''}`}>
-        <button className="btn black"><Link to="/login" className="navlink" >Login</Link></button>
-        <button className="btn white">Contact Us</button>
+        <Link to="/login" className="navlink" ><button className="btn black">Login</button></Link>
+        <Link to="/contact" className="navlink" ><button className="btn white">Contact Us</button></Link>
       </div>
 
       <button className="hamburger" onClick={() => setOpen(!open)}>☰</button>

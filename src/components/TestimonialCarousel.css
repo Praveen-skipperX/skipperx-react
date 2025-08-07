@@ -17,7 +17,9 @@
 }
 
 .highlight {
-  color: #ff4d4f;
+    background: linear-gradient(to bottom, #ff7b6a, #ff4101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-style: italic;
   padding-right: 0px;
 }
@@ -84,6 +86,10 @@
   min-width: 100%;
   display: flex;
   background: #000;
+  background: url('../assets/X.png') no-repeat center center, #101010 30%;
+  background-size: 420px; 
+  background-position: left;
+  background-position-x: 25%;
   padding: 7px 50px 5px 60px;
   border-radius: 12px;
   gap: 30px;
@@ -197,7 +203,7 @@
   opacity: 1;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .testimonial-card {
     flex-direction: column;

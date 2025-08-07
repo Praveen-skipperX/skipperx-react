@@ -64,7 +64,9 @@
 
 
 .nav-item .highlight {
-  color: #FF7B6A;
+    background: linear-gradient(to bottom, #ff7b6a, #ff4101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 700;
   font-style: normal;
 }

@@ -11,6 +11,8 @@ import About from './pages/About';
 import DroneEngineering from './pages/DroneEngineering';
 import RobotEngineering from './pages/RobotEngineering';
 import Login from './pages/login';
+import Signup from './pages/signup';
+import Contact from './pages/contact';
 
 
 
@@ -32,6 +34,8 @@ function App() {
         <Route path="/Drone-Engineering" element={<DroneEngineering />} />
         <Route path="/Robot-Engineering" element={<RobotEngineering />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/contact" element={<Contact />} />
 
       </Routes>
 

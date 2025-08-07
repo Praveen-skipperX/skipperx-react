@@ -93,7 +93,9 @@
 }
 
 .highlight {
-  color: #ff5a3d;
+    background: linear-gradient(to bottom, #ff7b6a, #ff4101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: Playfair Display;
 }
 

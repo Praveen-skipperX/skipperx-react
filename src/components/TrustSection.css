@@ -68,7 +68,9 @@
 }
 
 .trust-box .highlight {
-  color: #ff4e4e;
+    background: linear-gradient(to bottom, #ff7b6a, #ff4101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: bold;
   font-style: italic;
 }
