@@ -53,7 +53,7 @@ const Login = () => {
           <input type="password" placeholder="Password" className="login-input" required />
           <div className="login-options">
             <input type="checkbox" className="login-remember"/> <span className="remember">Remember me</span>
-            <a href="/" className="navlink" ><span className="login-forgot" >Forgot password</span></a>
+            <a href="/forget" className="navlink" ><span className="login-forgot" >Forgot password</span></a>
           </div>
           <button type="submit" className="login-submit-btn">Login</button>
           <div className="login-divider"><span>or</span></div>
@@ -62,7 +62,7 @@ const Login = () => {
             Login with Google
           </button>
           <p className="login-signup-text">
-            Not a member? <a href="/signup" className="login-signup-link">Signup now</a>
+            Not a member? <a href="/" className="login-signup-link">Signup now</a>
           </p>
         </form>
       </div>

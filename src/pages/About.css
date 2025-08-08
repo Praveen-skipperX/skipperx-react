@@ -14,6 +14,7 @@
   color: white;
   position: relative;
   z-index: 2;
+  margin-bottom: -220px;
 }
 
 .about-hero-title {
@@ -199,7 +200,7 @@
   color: #9A9A9A;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .about-quote-section {
     padding: 40px 30px;
@@ -211,15 +212,6 @@
     gap: 20px;
   }
 }
-
-
-
-
-
-
-
-
-
 
 .skipperx-gallery {
   background-color: #1C1C1C;
@@ -482,6 +474,7 @@
   background: linear-gradient(to right, #ff7b6a, #ff4101);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 
 .subtitle {

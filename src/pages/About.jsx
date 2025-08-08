@@ -12,30 +12,20 @@ import img1 from "../assets/about-last1.png";
 import img2 from "../assets/about-last2.png";
 import missionImg from "../assets/missionImg.png";
 import visionImg from "../assets/visionImg.png";
-import image1 from "../assets/about-beyond.png";
-import image2 from "../assets/sakshi-about.png";
-import image3 from "../assets/about-beyond.png";
-import image4 from "../assets/about-beyond.png";
-import image5 from "../assets/about-beyond.png";
-import image6 from "../assets/Hari.jpg";
+import image1 from "../assets/co-founder.png";
+import image2 from "../assets/vice-president.png";
+import image3 from "../assets/designer.png";
+import image4 from "../assets/product.png";
+import image5 from "../assets/harisha.jpg";
 
 
 const teamMembers = [
-  { name: "Pratyush Singh", position: "Software Engineer", image: image1, className: "member-card1",quote: "Building scalable web solutions" },
-  { name: "Sakshi Gupta", position: "Product Designer", image: image2, className: "member-card2" ,quote: "Building scalable web solutions"},
-  { name: "Ravi Kumar", position: "Frontend Developer", image: image3, className: "member-card3" ,quote: "Building scalable web solutions"},
-  { name: "Anjali Mehta", position: "Backend Developer", image: image4, className: "member-card4" ,quote: "Building scalable web solutions"},
-  { name: "Vikas Sharma", position: "Data Scientist", image: image5, className: "member-card5" ,quote: "Building scalable web solutions"},
-  { name: "Neha Verma", position: "UI/UX Designer", image: image6, className: "member-card6" ,quote: "Building scalable web solutions"},
-  { name: "Pratyush Singh", position: "Software Engineer", image: image1, className: "member-card1" ,quote: "Building scalable web solutions"},
-  { name: "Sakshi Gupta", position: "Product Designer", image: image2, className: "member-card2" ,quote: "Building scalable web solutions"},
-  { name: "Ravi Kumar", position: "Frontend Developer", image: image3, className: "member-card3" ,quote: "Building scalable web solutions"},
-  { name: "Anjali Mehta", position: "Backend Developer", image: image4, className: "member-card4" ,quote: "Building scalable web solutions"},
-  { name: "Vikas Sharma", position: "Data Scientist", image: image5, className: "member-card5" ,quote: "Building scalable web solutions"},
-  { name: "Neha Verma", position: "UI/UX Designer", image: image6, className: "member-card6" ,quote: "Building scalable web solutions"},
-  { name: "Vikas Sharma", position: "Data Scientist", image: image5, className: "member-card5" ,quote: "Building scalable web solutions"},
-  { name: "Neha Verma", position: "UI/UX Designer", image: image6, className: "member-card6" ,quote: "Building scalable web solutions"},
-  { name: "Pratyush Singh", position: "Software Engineer", image: image1, className: "member-card1" ,quote: "Building scalable web solutions"},
+  { name: "Himanshu Singh", position: "Co-Founder", image: image1, className: "member-card1",quote: "Building scalable web solutions" },
+  { name: "Praveen Kittur", position: "Vice President", image: image2, className: "member-card2" ,quote: "Building scalable web solutions"},
+  { name: "Sakshi Gupta", position: "Sr.Product Designer", image: image3, className: "member-card3" ,quote: "Building scalable web solutions"},
+  { name: "Amit Biswas", position: "Product Manager", image: image4, className: "member-card4" ,quote: "Building scalable web solutions"},
+  { name: "Harisha Ediga", position: "Full Stack Developer", image: image5, className: "member-card5" ,quote: "Building scalable web solutions"},
+
   
 ];
 
