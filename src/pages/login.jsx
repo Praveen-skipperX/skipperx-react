@@ -62,7 +62,7 @@ const Login = () => {
             Login with Google
           </button>
           <p className="login-signup-text">
-            Not a member? <a href="/" className="login-signup-link">Signup now</a>
+            Not a member? <a href="/signup" className="login-signup-link">Signup now</a>
           </p>
         </form>
       </div>

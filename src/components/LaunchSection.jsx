@@ -6,9 +6,9 @@ const LaunchSection = () => {
     <section className="launch-section">
       <div className="launch-container">
 
-        {/* Left Section with Image Background */}
+       
         <div className="launch-left">
-          <div className="launch-left-bg"></div> {/* Background image div */}
+          <div className="launch-left-bg"></div>
 
           <h2>
             Launching <span className="highlight">soon</span>
@@ -21,7 +21,7 @@ const LaunchSection = () => {
           <button className="launch-btn">Explore Programs</button>
         </div>
 
-        {/* Right Animated Background + Card */}
+        
         <div className="launch-right">
           <div className="block-columns">
             {[...Array(4)].map((_, colIndex) => (

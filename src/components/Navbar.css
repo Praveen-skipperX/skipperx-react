@@ -5,6 +5,7 @@
   padding: 8px 40px 8px 72px;
   background: #0e0d0d;
   color: black;
+  height: 70px;
   position: relative;
   z-index: 999;
 }
@@ -21,7 +22,7 @@
 }
 
 .logo-img {
-  height: 42px;
+  height: 40px;
   width: 119px;
   margin-bottom: -7px;
 }
@@ -34,6 +35,7 @@
   font-size: 20px;
   
 }
+
 .navbar-member{
   font-style: poppins;
   font-size: 20px;

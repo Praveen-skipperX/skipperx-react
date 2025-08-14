@@ -1,6 +1,6 @@
 .dronebody {
   background-color: #1C1C1C;
-  padding: 4px 120px 64px 55px;
+  padding: 50px 120px 64px 55px;
 }
 
 .accredit{
@@ -132,7 +132,6 @@
   background: #000000;
   padding: 6px 10px;
   color: #ccc;
-  margin-left: -10px;
   font-size: 16px;
   position: relative;
   margin-top: 30px;
@@ -495,7 +494,7 @@
   background: linear-gradient(135deg, #181523, #0f0d15);
   border-radius: 8px;
   border: 1px solid #666;
-  padding: 8px 8px 8px 8px;
+  padding: 13px 13px 8px 13px;
   color: #eaeaea;
   width: 430px;
   height: 171px;
@@ -506,56 +505,14 @@
 
 .drone-testimonial-quote p {
   margin: 0;
-  font-size: 14px;
-  align-content: justify;
+  font-size: 13px;
+  text-align: justify;
   line-height: 1.4;
   font-style: light italic;
   margin-top: 0px;
 }
 
 
-
-
-
-
-
-
-
-/* Sticky effect without touching your other stylings */
-.sticky-wrapper {
-  position: -webkit-sticky; /* Safari support */
-  position: sticky;
-  top: 20px; /* space from top before sticking */
-  align-self: flex-start;
-  height: fit-content;
-}
-
-.drone-info-container {
-  align-items: flex-start; /* ensures sticky works in flexbox */
-}
-
-.dronebody,
-.drone-info-section,
-.drone-info-container {
-  overflow: visible !important; /* prevent sticky from breaking */
-}
-
-.drone-info-right {
-  position: -webkit-sticky; /* for Safari */
-  position: sticky;
-  bottom: 20px; /* distance from top before it sticks */
-  align-self: flex-start;
-  height: fit-content; 
-}
-
-.drone-info-container {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start; 
-}
-.dronebody, .drone-info-section, .drone-info-container {
-  overflow: visible; 
-}
 
 
 

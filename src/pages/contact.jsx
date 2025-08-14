@@ -1,7 +1,6 @@
 import React from "react";
 import "./contact.css";
 import loginImage from "../assets/login-bg1.png"; 
-import googleLogo from "../assets/login-google.png";
 import harish from '../assets/harisha.jpg'
 import sai from '../assets/saisai.png'
 import hari from '../assets/harih.jpg'

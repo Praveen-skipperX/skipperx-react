@@ -54,6 +54,9 @@ const EngineeringPrograms = () => {
             className="eng-card"
             style={{ backgroundImage: `url(${item.bg})` }}
           >
+            <Link className="navlink"
+              to={`/${item.title.toLowerCase().replace(/\s+/g, "-")}`}
+            >
             {item.tag && <div className="eng-badge">{item.tag}</div>}
             <h3 className="eng-title">{item.title}</h3>
 
@@ -61,18 +64,17 @@ const EngineeringPrograms = () => {
               <img src={item.avatar} alt="student" className="eng-avatar" />
               <p className="eng-quote">{item.quote}</p>
             </div>
-
+            
             <div className="eng-success">
               <p className="eng-success-label">Success rate:</p>
               <p className="eng-success-value">{item.success}</p>
             </div>
 
-            {/* ✅ Arrow link to dynamic route */}
-            <Link
-              to={`/${item.title.toLowerCase().replace(/\s+/g, "-")}`}
-              className="eng-arrow-btn"
-            >
+            
+            
+            <div className="eng-arrow-btn"> 
               <img src={arrowIcon} alt="arrow" className="eng-arrow-img" />
+            </div>   
             </Link>
           </div>
         ))}

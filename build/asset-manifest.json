@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c9ecad57.css",
-    "main.js": "/static/js/main.d2212cff.js",
+    "main.css": "/static/css/main.581782b6.css",
+    "main.js": "/static/js/main.5b825eba.js",
     "static/media/hero-landing-hd.png": "/static/media/hero-landing-hd.93c5d9f062fb9d0ccf1a.png",
     "static/media/about-hero.png": "/static/media/about-hero.9ff0c317e6dd6248a2b3.png",
     "static/media/hero-landing.png": "/static/media/hero-landing.94e8676dae9cdbbbd0d8.png",
@@ -36,6 +36,7 @@
     "static/media/ramya.png": "/static/media/ramya.335a1a4522078ef2a458.png",
     "static/media/ramyaa.png": "/static/media/ramyaa.273ab1f0061662c19a59.png",
     "static/media/ramyaaa.png": "/static/media/ramyaaa.7229c087e91ed9e73061.png",
+    "static/media/co-founder.png": "/static/media/co-founder.9b31e5df8ba012206175.png",
     "static/media/akhil.png": "/static/media/akhil.982839285cf7482e4f11.png",
     "static/media/robo1.png": "/static/media/robo1.8f6d5542c0b68265e5e8.png",
     "static/media/arvr1 (2).png": "/static/media/arvr1 (2).a0f84f9ad66389e58407.png",
@@ -44,10 +45,13 @@
     "static/media/dro1.png": "/static/media/dro1.ab90e10b18aae79c2634.png",
     "static/media/aman-gupta.png": "/static/media/aman-gupta.ada1092347a5985aa030.png",
     "static/media/portfolio.png": "/static/media/portfolio.29730bee4d22d6f40e41.png",
+    "static/media/vice-president.png": "/static/media/vice-president.0110ea4f39c32659b86c.png",
+    "static/media/product.png": "/static/media/product.7cdc90f165a0bd80fe7c.png",
     "static/media/navya.png": "/static/media/navya.9a573a16a45415e41255.png",
     "static/media/arvr1.png": "/static/media/arvr1.b00011ec44911536559c.png",
     "static/media/saksh.png": "/static/media/saksh.ca3af08cb5f2d6872298.png",
     "static/media/zah.png": "/static/media/zah.97069f2f4f91a42d298d.png",
+    "static/media/designer.png": "/static/media/designer.de9ced474b7ec199ea41.png",
     "static/media/community.png": "/static/media/community.b20f46479dcfb5819ed8.png",
     "static/media/saisai.png": "/static/media/saisai.f8963b10a554ac946553.png",
     "static/media/live-classes.png": "/static/media/live-classes.089aa6dbcca7106ce340.png",
@@ -84,9 +88,12 @@
     "static/media/031p.png": "/static/media/031p.910a7ab18b4cffe90971.png",
     "static/media/lolo.png": "/static/media/lolo.910a7ab18b4cffe90971.png",
     "static/media/ananya.png": "/static/media/ananya.db86a5c5cbe8ef306ba4.png",
+    "static/media/developer.jpg": "/static/media/developer.bfaa95d713bf21666908.jpg",
     "static/media/harisha.jpg": "/static/media/harisha.78a8e15d2f753ef42650.jpg",
     "static/media/03p.png": "/static/media/03p.2967df4965e3767d4a65.png",
     "static/media/Hari.jpg": "/static/media/Hari.d6bb43b07e050d62d754.jpg",
+    "static/media/default-bg.png": "/static/media/default-bg.78b5d09a9f7af347313b.png",
+    "static/media/default-loading.png": "/static/media/default-loading.78b5d09a9f7af347313b.png",
     "static/media/041p.png": "/static/media/041p.a742503ed0882ac45e01.png",
     "static/media/olol.png": "/static/media/olol.a742503ed0882ac45e01.png",
     "static/media/04p.png": "/static/media/04p.634e9656dfc1ecf68fce.png",
@@ -118,11 +125,11 @@
     "static/media/i3.svg": "/static/media/i3.97c77db084968346fa1f80a4d8d59732.svg",
     "static/media/im0.svg": "/static/media/im0.44a8afc244fc180c12191bbb0bba4e19.svg",
     "index.html": "/index.html",
-    "main.c9ecad57.css.map": "/static/css/main.c9ecad57.css.map",
-    "main.d2212cff.js.map": "/static/js/main.d2212cff.js.map"
+    "main.581782b6.css.map": "/static/css/main.581782b6.css.map",
+    "main.5b825eba.js.map": "/static/js/main.5b825eba.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9ecad57.css",
-    "static/js/main.d2212cff.js"
+    "static/css/main.581782b6.css",
+    "static/js/main.5b825eba.js"
   ]
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef} from "react";
 import './RobotEngineering.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -45,6 +45,11 @@ const RobotEngineering = () => {
   ];
 
   const [activeIndex, setActiveIndex] = useState(null);
+  const cardRef = useRef(null);
+  const sectionRef = useRef(null); 
+  const offerRef = useRef(null);
+  const [isFixed, setIsFixed] = useState(false);
+  const [offsetTop, setOffsetTop] = useState(0);
 
   const toggleAccordion = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
@@ -109,6 +114,24 @@ const RobotEngineering = () => {
       setTimer(timeLeft);
     }, 1000);
 
+    const handleScroll = () => {
+      if (!cardRef.current || !sectionRef.current || !offerRef.current) return;
+
+      const sectionTop = sectionRef.current.getBoundingClientRect().top;
+      const sectionBottom = offerRef.current.getBoundingClientRect().top;
+      const cardHeight = cardRef.current.offsetHeight;
+
+      if (sectionTop <= 20 && sectionBottom > cardHeight + 40) {
+        setIsFixed(true);
+        setOffsetTop(20);
+      } else {
+        setIsFixed(false);
+      }
+    };
+    
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+
     return () => clearInterval(interval);
   }, []);
 
@@ -145,13 +168,13 @@ const RobotEngineering = () => {
             <span className="highlight">Robot Engineering </span>expertise.
           </h1>
           <p className="drone-description">
-            Earn to design immersive experiences that blur the line between real and virtual.
+            Learn to engineer intelligent machines that merge precision, innovation, and real-world impact.
           </p>
 
           <div className="drone-cta-buttons">
             <button className="drone-outline-btn">Create</button>
             <button className="drone-outline-btn">Code</button>
-            <button className="drone-outline-btn">Experience</button>
+            <button className="drone-outline-btn">Design</button>
           </div>
 
           <button className="drone-start-btn">Start Learning</button>
@@ -208,9 +231,9 @@ const RobotEngineering = () => {
 
 
 
+      
 
-
-        <div className="drone-info-section">
+        <section className="drone-info-section" ref={sectionRef}>
           <div className="drone-info-left">
 
 
@@ -264,8 +287,8 @@ const RobotEngineering = () => {
 
 
 
-            <div className="drone-info-stats">
-              <h2 className="drone-head-ing">
+            <div className="robot-info-stats">
+              <h2 className="robot-head-ing">
                     Mentors
               </h2>
               {[
@@ -273,7 +296,7 @@ const RobotEngineering = () => {
                 { count: '2 Months', label: 'Duration' },
                 { count: '8+', label: 'Industry Experts' }
               ].map((item, index) => (
-                <div className="drone-stat-card" key={index}>
+                <div className="robot-stat-card" key={index}>
                   <div className="stat-icon">
                     <span>⚡</span>
                   </div>
@@ -472,7 +495,15 @@ const RobotEngineering = () => {
 
           <div className="drone-info-right">
           {!showForm && (
-            <div className="drone-pricing-card">
+            <div
+              ref={cardRef}
+              className="drone-pricing-card"
+              style={{
+                position: isFixed ? "fixed" : "sticky",
+                top: isFixed ? `0px` : "0px",
+                zIndex: 10,
+              }}
+            >
               <h2>Master Robot Engineering Program </h2>
 
               <ul className="drone-features-list">
@@ -509,7 +540,15 @@ const RobotEngineering = () => {
          {showForm && (
           <div className={`drone-form-wrapper ${showForm ? 'visible' : 'hidden'}`}>
            <div className="drone-form">
-            <div className="drone-form-card">
+            <div
+              ref={cardRef}
+              className="drone-pricing-card"
+              style={{
+                position: isFixed ? "fixed" : "sticky",
+                top: isFixed ? `0px` : "0px",
+                zIndex: 10,
+              }}
+            >
               <h3 className="drone-form-title">Master Robot Engineering Program</h3>
 
               <form className="drone-form-fields">
@@ -539,9 +578,9 @@ const RobotEngineering = () => {
 
 
           </div>
-        </div>
+        </section>
 
-
+       
 
 
 
@@ -553,7 +592,7 @@ const RobotEngineering = () => {
 
 
         <div className="drone-offer-section">
-          <h2 className="offer-heading">Biggest Price Drop Yet</h2>
+          <h2 className="offer-heading" ref={offerRef}>Biggest Price Drop Yet</h2>
           
           <div className="offer-price-box">
             <span className="offer-icon">⚡</span>
@@ -599,7 +638,7 @@ const RobotEngineering = () => {
           />
           <div className="certificate-overlay">
             <h2 className="certificate-title">
-              Seal the Skill with a <span className="highlight">Skipperx</span> Certificate
+              Seal the Skill with a <span className="highlight">SkipperX </span> Certificate
             </h2>
             <p className="certificate-subtext">
               Yes! You will be certified for this program.

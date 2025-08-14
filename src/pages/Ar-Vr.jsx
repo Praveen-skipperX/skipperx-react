@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef} from "react";
-import './DroneEngineering.css';
+import './Ar-Vr.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import bgImage from '../assets/dronebg.png';
+import bgImage from '../assets/arvr-hero.png';
 import bulbIcon from '../assets/holding-bulb.png';
 import harish from '../assets/harisha.jpg';
 import sai from '../assets/sai.jpg';
@@ -15,10 +15,10 @@ import soumya from "../assets/soumya.png";
 import vishal from "../assets/vishal.png";
 import faqarrow from "../assets/faqarrow.png";
 import brochureImage from "../assets/drone-brochure.png";
+import nineeight from "../assets/98.png";
 import nineseven from "../assets/97.png";
-import eigth from "../assets/88.png";
-import nineone from "../assets/91.png";
-
+import eightseven from "../assets/87.png";
+import arvrreviewlogo from "../assets/arvr-r-logo.png";
 
 
 
@@ -26,16 +26,17 @@ import nineone from "../assets/91.png";
 
 
 const modules = [
-  { title: "Paper Planes and Aerodynamics", content: "Learn the basics of flight using paper planes and aerodynamics." },
-  { title: "Introduction to Drones", content: "Understand drone parts, types, and functionality." },
-  { title: "Building and Testing the Drone", content: "Step-by-step drone assembly and flight tests." },
-  { title: "Introduction to Sensors", content: "Overview of sensors used in drones." },
-  { title: "Magnetometer and Barometer", content: "Dive deep into orientation and altitude sensors." },
-  { title: "Understanding the Framework", content: "Learn the software framework that controls drones." },
-  { title: "Project Week", content: "Build and fly your own drone in the final week." }
+  { title: " Introduction to Unity and 3D Basics", content: "Learn the basics of flight using paper planes and aerodynamics." },
+  { title: "Unity Basics and C# Scripting", content: "Understand drone parts, types, and functionality." },
+  { title: "Physics, UI, and Effects", content: "Step-by-step drone assembly and flight tests." },
+  { title: "Lighting and Advanced Unity Features", content: "Overview of sensors used in drones." },
+  { title: "Introduction to Vuforia Engine", content: "Dive deep into orientation and altitude sensors." },
+  { title: "Advanced Vuforia Features", content: "Learn the software framework that controls drones." },
+  { title: " Introduction to WebXR and A-Frame", content: "Overview of sensors used in drones." },
+  { title: "Advanced WebXR and Capstone Project", content: "Build and fly your own drone in the final week." }
 ];
 
-const DroneEngineering = () => {
+const ArVr = () => {
   const scrollItems = [
     "Business Analytics",
     "Human Resource",
@@ -167,18 +168,18 @@ const DroneEngineering = () => {
             <img src={bulbIcon} alt="Bulb Icon" className="drone-tag-icon" />
             For Innovators
           </div>
-          <h1 className="drone-title">
-            Design, Build & Launch Your Own Drones with Our{' '}
-            <span className="highlight">Drone Engineering Program.</span>
+          <h1 className="arvr-title">
+            Create <span className="highlight">AR/VR experiences </span>  that redefine reality and set new standards.
+        
           </h1>
           <p className="drone-description">
-            Dive into aerodynamics, hardware, and flight systems—build drones that actually fly.
+            Earn to design immersive experiences that blur the line between real and virtual.
           </p>
 
           <div className="drone-cta-buttons">
-            <button className="drone-outline-btn">Build it</button>
-            <button className="drone-outline-btn">Fly it</button>
-            <button className="drone-outline-btn">Own it</button>
+            <button className="drone-outline-btn">Create</button>
+            <button className="drone-outline-btn">Code</button>
+            <button className="drone-outline-btn">Design</button>
           </div>
 
           <button className="drone-start-btn">Start Learning</button>
@@ -215,19 +216,19 @@ const DroneEngineering = () => {
 
           <div className="drone-stat-section">
             <div className="stat-card">
-              <h2>97<span>%</span></h2>
+              <h2>98<span>%</span></h2>
               <p>Completion rate <br />for our 1:1 Program.</p>
-              <img src={nineseven} className="nineseven"/>
+              <img src={nineeight} className="nineseven"/>
             </div>
             <div className="stat-card">
-              <h2>91<span>%</span></h2>
+              <h2>97<span>%</span></h2>
               <p>Of participants report<br /> high engagement</p>
-              <img src={nineone} className="nineone"/>
+              <img src={nineseven} className="nineone"/>
             </div>
             <div className="stat-card">
-              <h2>88<span>%</span></h2>
+              <h2>87<span>%</span></h2>
               <p>Of participants stay <br />with their company.</p>
-              <img src={eigth} className="eight"/>
+              <img src={eightseven} className="eight"/>
             </div>
           </div>
 
@@ -248,12 +249,11 @@ const DroneEngineering = () => {
             </h2>
 
             <p className="drone-info-para">
-              Skipperx Drone Engineering Program helps you to master drone design, electronics, aerodynamics,
-              and real-time flight control.
+              Skipper’s AR/VR Program helps you master 3D designs, spatial computing, immersive storytelling,and interaction design.
             </p>
             <p className="drone-info-para1">
-              You’ll gain practical skills in assembling and launching drones
-              preparing you for careers in aerospace, defense, & innovation-driven industries.
+              You’ll gain practical skills in building virtual environments and augmented 
+              experiences—preparing you for careers in gaming, education, healthcare, and emerging tech industries.
             </p>
           </div>
 
@@ -262,21 +262,26 @@ const DroneEngineering = () => {
            <div className="skilllist-section">
             <h3>Skills you will gain with this path</h3>
             <div className="skills-tags">
-              <span>Drone Design</span>
-              <span>Aerodynamics</span>
-              <span>Aviation</span>
+              <span>Rendering</span>
+              <span>Modeling</span>
+              <span>Visualization</span>
+              <span>Optimization</span>
+              <span>Prototyping</span>
+              <span>Immersion</span>
+              <span>Scripting</span>
+              <span>Calibration</span>
+              <span>Debugging</span>
+              <span>Tracking</span>
+              <span>Animation</span>
+              <span>Projection</span>
+              <span>Automation</span>
+              <span>Mapping</span>
+              <span>Experience</span>
+              <span>Calibration</span>
               
-              <span>Soldering</span>
-              <span>Electronics Integration</span>
-              <span>Battery Management</span>
-              <span>FPV Systems</span>
-              <span>Flight Control</span>
-              <span>Embedded Programming</span>
-              <span>GPS Navigation</span>
-              <span>Microcontroller Configuration</span>
               
-              <span>Sensor Calibration</span>
-              <span>PID Tuning</span>
+              
+
               
               
             </div>
@@ -295,9 +300,9 @@ const DroneEngineering = () => {
                     Mentors
               </h2>
               {[
-                { count: '50,000+', label: 'Mentees trained' },
+                { count: '42,000+', label: 'Mentees trained' },
                 { count: '2 Months', label: 'Duration' },
-                { count: '10+', label: 'Industry Experts' }
+                { count: '7+', label: 'Industry Experts' }
               ].map((item, index) => (
                 <div className="drone-stat-card" key={index}>
                   <div className="stat-icon">
@@ -317,21 +322,21 @@ const DroneEngineering = () => {
 
 
             <div className="drone-testimonial-box">
-              <h2 className="robot-heading">Learning That<span className="highlight"> Works</span> - Proven by People</h2>
+              <h2 className="robot-heading">Learning That<span className="highlight"> Works </span> - Proven by People</h2>
               <div className="drone-testimonial-person">
-                <img src={require('../assets/droneashish.png')} alt="Ashish Singhal" />
+                <img src={require('../assets/singh-arvr.png')} alt="Ashish Singhal" />
                 <div className="drone-testimonial-name">
-                  Ashish Singhal <br />
-                  <strong>Deloitte.</strong>
+                  Shreyansh Singh <br />
+                  <img src={arvrreviewlogo}  className="arvr-review-img" />
                 </div>
               </div>
 
-              <div className="drone-testimonial-quote">
+              <div className="arvr-testimonial-quote">
                 <p>
                   <em>
-                    "The Drone Engineering Program at Skipper exceeded my expectations. It offered a strong balance of theory and practical work. I especially enjoyed assembling my own drone and testing its flight capabilities.
+                    "I was really impressed by Skipper’s AR/VR Engineering Program. The modules were well-organized, and mentors were always available to help and guied us in each and evry step. Building interactive virtual spaces and learning about spatial computing opened up so many creative possibilities for me.
                     <br /><br />
-                    This experience has equipped me with valuable skills I can apply in multiple industries."
+                    This program is perfect if you want to break into immersive tech."
                   </em>
                 </p>
               </div>
@@ -341,21 +346,22 @@ const DroneEngineering = () => {
 
 
 
-            <div className="drone-built-section">
-              <h2>This is <span className="highlight">built</span> for</h2>
-              <div className="drone-built-carousel">
-                <div className="drone-built-track">
+            <div className="arvr-built-section">
+              <h2>This is <span className="highlight">built </span> for</h2>
+              <div className="arvr-built-carousel">
+                <div className="arvr-built-track">
                   {[
-                    { tag: 'Aviation', title: 'Aerospace Engineering', desc: 'for designing and testing aerial systems.' },
-                    { tag: 'Security', title: 'Defense & Surveillance', desc: 'for drone-based reconnaissance and security operations.' },
-                    { tag: 'Relief', title: 'Disaster Management', desc: 'Supporting rescue missions and supply delivery.' },
-                    { tag: 'Media', title: 'Filmmaking & Handling  ', desc: 'capturing cinematic shots and live coverage, on air.' },
-                    { tag: 'Agriculture', title: 'AgroTech', desc: 'using drones for crop monitoring and precision farming.' },
-                    { tag: 'Logistics', title: ' Parcel  Delivery', desc: 'enabling last-mile drone-based delivery systems.' },
-                    { tag: ' Conservation', title: 'Environmental Research', desc: 'Tracking wildlife,terrains and monitoring climate impact.' }
+                    { tag: 'Entertainment', title: 'Interactive worlds', desc: 'Creating immersive play and storytelling experiences.' },
+                    { tag: 'Education', title: 'Learning simulations', desc: 'Enabling realistic and engaging skill-building environments.' },
+                    { tag: 'Healthcare', title: 'Medical visualization ', desc: 'aiding surgery planning and therapeutic treatments.' },
+                    { tag: 'Retail ', title: 'Virtual try-ons ', desc: 'Helping customers preview products before purchasing.' },
+                    { tag: 'Real Estate', title: ' Virtual walkthroughs  ', desc: 'Showcasing properties and designs remotely as user wants.' },
+                    { tag: 'Automotive', title: 'Prototyping ', desc: 'improving design and maintenance processes included.' },
+                    { tag: 'Tourism', title: 'Virtual tours  ', desc: 'bringing cultural and historic sites to life digitally' }
+                    
                   ].map((item, i) => (
-                    <div className="drone-built-card" key={i}>
-                      <span className="built-tag">{item.tag}</span>
+                    <div className="arvr-built-card" key={i}>
+                      <span className="arvr-built-tag">{item.tag}</span>
                       <h4>{item.title}</h4>
                       <p>{item.desc}</p>
                     </div>
@@ -507,7 +513,7 @@ const DroneEngineering = () => {
                 zIndex: 10,
               }}
             >
-              <h2>Master Drone Engineering Program</h2>
+              <h2>Master AR VR Program</h2>
               <ul className="drone-features-list">
                 <li><span className="tickmark">&#10004;</span> Innovation for professional growth</li>
                 <li><span className="tickmark">&#10004;</span> Certification included</li>
@@ -557,7 +563,7 @@ const DroneEngineering = () => {
                   }}
                 >
                   <h3 className="drone-form-title">
-                    Master Drone Engineering Program
+                    Master AR VR Program
                   </h3>
                   <form className="drone-form-fields">
                     <input type="text" placeholder="First Name*" required />
@@ -639,56 +645,7 @@ const DroneEngineering = () => {
 
 
 
-    <div className="drone-parts">
-      <div className="drone-parts-section"
-      style={{ backgroundImage: `url(${droneBg})` }}
-    >
-      <div className="drone-content">
-        <h2 className="section-title">
-          Ready to Flex? Crack Open <br /> Your <span>Drone Kit</span>
-        </h2>
-
-        <div className="label label-1">
-          <strong className="d1">1. Frame</strong><br />
-          <span className="d1p">A quadcopter uses two clockwise (CW) and two counterclockwise (CCW) propellers.</span>
-        </div>
-
-        <div className="label label-2">
-          <strong className="d1">2. Motor</strong><br />
-          <span className="d1p">These are the powerhouses that give your quad the thrust to reach the intense speeds modern drones are reaching.</span>
-        </div>
-
-        <div className="label label-3">
-          <strong className="d1">3. Battery</strong><br />
-         <span className="d1p"> Li-po battery is a type of rechargeable battery that is commonly used throughout the RC hobby.</span>
-        </div>
-
-        <div className="label label-4">
-          <strong className="d1">4. Propellers</strong><br />
-          <span className="d1p">A quadcopter uses two clockwise (CW) and two counterclockwise (CCW) propellers.</span>
-        </div>
-
-        <div className="label label-5">
-          <strong className="d1">5. Motor</strong><br />
-          <span className="d1p">These are the powerhouses that give your quad the thrust to reach the intense speeds modern drones are reaching.</span>
-        </div>
-
-        
-        <a
-          className="whatsapp-button"
-          href="https://wa.me/919999999999"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Connect on WhatsApp
-        </a>
-      </div>
-      
-    </div>
-   </div>
-
-
-
+    
 
 
 
@@ -850,4 +807,4 @@ const DroneEngineering = () => {
   );
 };
 
-export default DroneEngineering;
+export default ArVr;
