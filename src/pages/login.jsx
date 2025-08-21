@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./login.css";
 import loginImage from "../assets/login-bg1.png"; 
 import googleLogo from "../assets/login-google.png";
@@ -6,8 +7,20 @@ import harish from '../assets/harisha.jpg'
 import sai from '../assets/saisai.png'
 import hari from '../assets/harih.jpg'
 import sakshi from '../assets/saksh.png'
+import logo from '../assets/skipper-black-new.png';
+
+
+
 
 const Login = () => {
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) => {
+      e.preventDefault(); // prevent refresh
+      navigate("/otp");   // go to OTP page
+    };
+
+
   return (
     <div className="login-page-container">
      
@@ -46,28 +59,42 @@ const Login = () => {
 
       
       <div className="login-right-section">
-        <form className="login-form">
-          <h2 className="login-title">LOGIN</h2>
-          <p className="login-subtitle">Welcome back! Please enter your details.</p>
-          <input type="email" placeholder="Email" className="login-input" required />
-          <input type="password" placeholder="Password" className="login-input" required />
-          <div className="login-options">
-            <input type="checkbox" className="login-remember"/> <span className="remember">Remember me</span>
-            <a href="/forget" className="navlink" ><span className="login-forgot" >Forgot password</span></a>
+        <form className="login-form" onSubmit={handleSubmit}>
+          
+          <img src={logo} alt="Skipper Logo" className="login-title"/>
+          
+          <div className="login-input">
+              <select className="login-country-code">
+              <option value="+91">+91</option>
+              <option value="+1">+1</option>
+              <option value="+44">+44</option>
+              </select>
+
+            <input
+                type="tel"
+                className="phone-inputs"
+                placeholder="XXXXXXXXXX"
+                name="phone"
+                required
+              />
+
+              
           </div>
-          <button type="submit" className="login-submit-btn">Login</button>
+          <div className="login-options">
+            <a href="/email" className="navlink" >Use<span className="login-forgot" > E-mail</span>instead</a>
+          </div>
+          <button type="submit" className="login-submit-btn">Continue</button>
           <div className="login-divider"><span>or</span></div>
           <button type="button" className="login-google-btn">
             <img src={googleLogo} alt="Google" />
             Login with Google
           </button>
-          <p className="login-signup-text">
-            Not a member? <a href="/signup" className="login-signup-link">Signup now</a>
-          </p>
+          
         </form>
       </div>
     </div>
   );
 };
+
 
 export default Login;

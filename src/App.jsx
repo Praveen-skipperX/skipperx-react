@@ -8,13 +8,15 @@ import TermsAndConditions from './pages/t & c'
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import RefundPolicy from './pages/RefundPolicy';
 import About from './pages/About';
+import Blog from './pages/blog';
 import DroneEngineering from './pages/DroneEngineering';
 import RobotEngineering from './pages/RobotEngineering';
 import ArVr from './pages/Ar-Vr';
 import Login from './pages/login';
-import Signup from './pages/signup';
+import Email from './pages/email';
 import Contact from './pages/contact';
-import Forget from './pages/forget';
+import Otp from './pages/otp';
+//import Forget from './pages/forget';
 
 
 
@@ -28,14 +30,16 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
         <Route path="/about" element={<About />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/t & c" element={<TermsAndConditions />} />
         <Route path="/Drone-Engineering" element={<DroneEngineering />} />
         <Route path="/Robot-Engineering" element={<RobotEngineering />} />
         <Route path="/ar-vr" element={<ArVr />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/forget" element={<Forget />} />
+        <Route path="/email" element={<Email />} />
+        <Route path="/otp" element={<Otp />} />
+        
 
       </Routes>
 
