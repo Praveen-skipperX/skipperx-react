@@ -429,7 +429,7 @@
 /* ✅ Responsive */
 @media (max-width: 1024px) {
   .startup-tools-section {
-    padding: 48px 40px;
+    padding: 48px 80px;
   }
 }
 
