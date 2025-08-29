@@ -316,6 +316,9 @@
   flex-wrap: wrap;
 }
 
+
+
+
 .robot-stat-card {
   background: linear-gradient(to right , #100e15 30%, #071020 50%, #071835 90%);
   padding: 26px 10px;
@@ -364,6 +367,7 @@
 .drone-info-heading span {
   color: #ff4b4b;
 }
+
 
 .drone-info-para {
   font-size: 16px;

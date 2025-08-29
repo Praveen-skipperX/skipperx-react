@@ -12,6 +12,9 @@ import Blog from './pages/blog';
 import DroneEngineering from './pages/DroneEngineering';
 import RobotEngineering from './pages/RobotEngineering';
 import ArVr from './pages/Ar-Vr';
+import StartupStack from './pages/StartupStack';
+import TechCore from './pages/TechCore';
+import CreatorsHub from './pages/CreatorsHub';
 import Login from './pages/login';
 import Email from './pages/email';
 import Contact from './pages/contact';
@@ -35,6 +38,9 @@ function App() {
         <Route path="/Drone-Engineering" element={<DroneEngineering />} />
         <Route path="/Robot-Engineering" element={<RobotEngineering />} />
         <Route path="/ar-vr" element={<ArVr />} />
+        <Route path="/Startup-Stack" element={<StartupStack />} />
+        <Route path="/Core-Tech" element={<TechCore />} />
+        <Route path="/creators-hub" element={<CreatorsHub />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/email" element={<Email />} />

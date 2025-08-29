@@ -147,9 +147,9 @@
   padding-top: 128px;
 }
 
-/* Blog Card */
+
 .blog-card {
-  background: #0e0e0e;
+  background: #000;
   border-radius: 16px;
   padding: 24px;
   position: relative;
@@ -157,33 +157,33 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 220px;
-  background-image: url("../assets/X.png"); /* optional faint background */
-  background-size: contain;
+  min-height: 246px;
+  background-image: url("../assets/X.png"); 
+  background-size: 55%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left bottom;
 }
 
 .blog-card-top {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 12px;
+  font-family: poppins;
   color: #aaa;
   margin-bottom: 16px;
 }
 
-.blog-brand {
-  font-weight: 700;
-  color: #fff;
-}
-.blog-brand span {
-  color: #ff4500;
+.blog-logo-img{
+  width: 78px;
+  height: 28px;
+  margin-top: -7px;
 }
 
-/* Tag pill */
+
 .blog-tag {
   display: inline-block;
-  background: linear-gradient(90deg, #5a3dff, #9b59b6);
+  width:fit-content;
+  background: linear-gradient(to right, #5a3dff, #9b59b6);
   color: white;
   font-size: 13px;
   padding: 4px 12px;

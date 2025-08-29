@@ -2,6 +2,7 @@ import React from "react";
 import "./blog.css";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import logo from '../assets/skipper-black-new.png';
 
 const Blog = () => {
   const topics = [
@@ -34,7 +35,7 @@ const Blog = () => {
     {
       id: 4,
       date: "24 August 2025",
-      tag: "Tech",
+      tag: "Techlkjhgfdfghj",
       title: "Why AI is trending and what will be the future.",
     },
   ];
@@ -75,7 +76,7 @@ const Blog = () => {
           <div key={blog.id} className="blog-card">
             <div className="blog-card-top">
               <span className="blog-date">{blog.date}</span>
-              <span className="blog-brand">SKIPPER<span>X</span></span>
+              <span className="blog-brand"><img src={logo} className="blog-logo-img" /></span>
             </div>
 
             <div className="blog-tag">{blog.tag}</div>

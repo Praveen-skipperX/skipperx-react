@@ -295,8 +295,8 @@ const ArVr = () => {
 
 
 
-            <div className="drone-info-stats">
-              <h2 className="drone-head-ing">
+            <div className="dronee-info-stats">
+              <h2 className="dronee-head-ing">
                     Mentors
               </h2>
               {[
@@ -304,8 +304,8 @@ const ArVr = () => {
                 { count: '2 Months', label: 'Duration' },
                 { count: '7+', label: 'Industry Experts' }
               ].map((item, index) => (
-                <div className="drone-stat-card" key={index}>
-                  <div className="stat-icon">
+                <div className="dronee-stat-card" key={index}>
+                  <div className="state-icon">
                     <span>⚡</span>
                   </div>
                   <h4>{item.count}</h4>

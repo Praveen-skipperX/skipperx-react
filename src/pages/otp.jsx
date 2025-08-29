@@ -20,7 +20,7 @@ const OtpVerification = () => {
       newOtp[index] = value;
       setOtp(newOtp);
 
-      // Move to next input if value entered
+      
       if (value && index < 3) {
         inputsRef.current[index + 1].focus();
       }

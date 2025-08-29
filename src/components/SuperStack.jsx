@@ -1,5 +1,6 @@
 import React from "react";
 import "./SuperStack.css";
+import { Link } from "react-router-dom";
 
 
 const stackData = [
@@ -37,11 +38,15 @@ const SuperStack = () => {
       </h2>
       <div className="stack-card-container">
         {stackData.map((item, index) => (
+          <Link className="navlink"
+              to={`/${item.title.toLowerCase().replace(/\s+/g, "-")}`}
+            >
           <div
             className="stack-box"
             key={index}
             style={{ backgroundImage: `url(${item.bgImage})` }}
-          >
+          > 
+            
             <div className="overlay">
               <div className="stack-tag">{item.tag}</div>
               <h3 className="stack-title">{item.title}</h3>
@@ -57,7 +62,9 @@ const SuperStack = () => {
             <div className="stack-footer-scroll">
               <div className="scroll-content">{item.footer} · {item.footer}</div>
             </div>
+            
           </div>
+          </Link>
         ))}
       </div>
     </section>

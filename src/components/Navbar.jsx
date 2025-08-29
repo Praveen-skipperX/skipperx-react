@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import logo from '../assets/skipper-black-new.png';
+import logo from '../assets/skipper-black.png';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

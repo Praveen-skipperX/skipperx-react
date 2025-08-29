@@ -60,7 +60,6 @@ const Email = () => {
           <div className="login-options">
             <a href="/login" className="navlink" >Use <span className="login-forgot" > Phone-number</span>instead</a>
           </div>
-          <button href="/otp" className="login-submit-btn">Continue</button>
           <div className="login-divider"><span>or</span></div>
           <button type="button" className="login-google-btn">
             <img src={googleLogo} alt="Google" />
