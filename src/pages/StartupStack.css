@@ -333,7 +333,7 @@
 @media (max-width: 1024px) {
   .startup-stat-section {
     flex-direction: row;
-    padding: 40px 65px;
+    padding: 40px 120px;
     align-items: center;
   }
 
