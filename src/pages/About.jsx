@@ -7,7 +7,7 @@ import bgImage from "../assets/about-x.png";
 import founder1 from "../assets/scf.png";
 import founder2 from "../assets/hcf.png";
 import founder3 from "../assets/vcf.png";
-import founder4 from "../assets/hemanth.png";
+import founder4 from "../assets/cf4.png";
 import img1 from "../assets/ab1.png";
 import img2 from "../assets/ab1.png";
 import missionImg from "../assets/missionImg.png";
