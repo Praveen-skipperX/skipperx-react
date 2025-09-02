@@ -9,7 +9,7 @@ import founder2 from "../assets/hcf.png";
 import founder3 from "../assets/vcf.png";
 import founder4 from "../assets/hemanth.png";
 import img1 from "../assets/ab1.png";
-import img2 from "../assets/ab22.png";
+import img2 from "../assets/ab1.png";
 import missionImg from "../assets/missionImg.png";
 import visionImg from "../assets/visionImg.png";
 import image1 from "../assets/co-founder.png";
