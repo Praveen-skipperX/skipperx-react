@@ -4,12 +4,12 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import heroBg from "../assets/about-hero.png";
 import bgImage from "../assets/about-x.png";
-import founder1 from "../assets/founder1.png";
-import founder2 from "../assets/founder1.png";
-import founder3 from "../assets/founder1.png";
-import founder4 from "../assets/founder1.png";
-import img1 from "../assets/about-last1.png";
-import img2 from "../assets/about-last2.png";
+import founder1 from "../assets/scf.png";
+import founder2 from "../assets/hcf.png";
+import founder3 from "../assets/vcf.png";
+import founder4 from "../assets/cf4.png";
+import img1 from "../assets/ab1.png";
+import img2 from "../assets/ab22.png";
 import missionImg from "../assets/missionImg.png";
 import visionImg from "../assets/visionImg.png";
 import image1 from "../assets/co-founder.png";
@@ -31,8 +31,8 @@ const teamMembers = [
 
 
 const founders = [
-  { name: "Himanshu Singh", role: "Co-Founder & CMO", image: founder1 },
-  { name: "Sourav Kamboj", role: "Co-Founder and CEO", image: founder2 },
+  { name: "Sourav Kamboj", role: "Co-Founder and CEO", image: founder1 },
+  { name: "Himanshu Singh", role: "Co-Founder & CMO", image: founder2 },
   { name: "Vivek Agarwal", role: "Co-Founder and COO", image: founder3 },
   { name: "Hemanth Ingle", role: "Co-Founder and VP", image: founder4 },
 ];

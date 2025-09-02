@@ -153,7 +153,7 @@ const StartupStack = () => {
         <div className="startup-stat-card">
             <h2>97<span>%</span></h2>
             <p>Completion rate <br />for our 1:1 Program.</p>
-            <img src={nineeight} className="startup-nineseven"/>
+            <img src={nineeight} className="startup-nineseven1"/>
         </div>
         <div className="startup-stat-card">
             <h2>91<span>%</span></h2>
