@@ -216,7 +216,7 @@
 /* Large tablets & small laptops */
 @media (max-width: 1024px) {
   .circlebody {
-    padding: 40px 120px 100px 120px;
+    
   }
 
   .circle-section {
