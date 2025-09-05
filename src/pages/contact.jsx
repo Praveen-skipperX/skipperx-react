@@ -68,7 +68,7 @@ const Contact = () => {
                         <img src={mail} className="contact-mail" />
                     </div>
                     <div>    
-                      <p>E-mail us - Support@corizo.in </p>
+                      <p>E-mail us - Support@skipperx.io </p>
                       <p className="contact-p">Average response time is  12-24 hours</p>
                     </div>  
                 </div>

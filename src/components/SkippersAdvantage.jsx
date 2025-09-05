@@ -40,7 +40,7 @@ const SkippersAdvantage = () => {
         <h2>Get the <span className="highlight">Skipperx</span> Advantage</h2>
         <div className="rig" />
       </div>
-      <p className="subtitle">
+      <p className="subtitle2">
         Unlock real-world learning, mentor guidance, and a career-ready portfolio.
       </p>
 

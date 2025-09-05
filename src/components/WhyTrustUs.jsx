@@ -23,7 +23,7 @@ const testimonials = [
     title: 'Software Engineer at Yello',
     text: `“I recently completed a rewarding internship at Skipperx, where I had the opportunity to delve deeply into the field of Machine Learning over a period of two months. This, <span class="highlightt">experience allowed me to enhance my technical skills.</span> and gain practical insights into machine learning algorithms and applications.”`,
     name: 'Prabash Tankalan',
-    role: 'Web development course',
+    role: 'Web development ',
     image: pra,
   },
   {
@@ -64,7 +64,7 @@ const WhyTrustUs = () => {
   const goPrev = () => setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 
   useEffect(() => {
-    //if (paused) return;
+    if (paused) return;
     const interval = setInterval(goNext, 2000);
     return () => clearInterval(interval);
   }, [paused]);
@@ -98,7 +98,7 @@ const WhyTrustUs = () => {
               <div className="trust-authorr">
                 <img src={t.image} alt={t.name} />
                 <div>
-                  <strong>{t.name}</strong>
+                  <strong className="trustn">{t.name}</strong>
                   <p className="pp">{t.role}</p>
                 </div>
               </div>
@@ -114,12 +114,12 @@ const WhyTrustUs = () => {
       </div>
 
       <div className="trust-footer">
-        <p>Join 80,000+ Learners who’ve transformed their careers</p>
+        <div className="trustp"><p>Join 80,000+ Learners who’ve transformed their careers</p></div>
         <div className="avatars">
-          <img src={harish} alt="avatar" />
-          <img src={hari} alt="avatar" />
-          <img src={sakshi} alt="avatar" />
           <img src={sai} alt="avatar" />
+          <img src={hari} alt="avatar" />
+          <img src={harish} alt="avatar" />
+          <img src={sakshi} alt="avatar" />
           <span>+50,000 more</span>
         </div>
       </div>

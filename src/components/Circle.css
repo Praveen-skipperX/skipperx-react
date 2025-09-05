@@ -1,18 +1,46 @@
-.circlebody{
+
+.circlebody1{
     padding-bottom: 128px;
     padding: 64px 120px 128px 120px;
 }
+
+.desktop-circle {
+  display: block;
+}
+.mobile-circle {
+  display: none;
+}
+/* Tablet + Mobile */
+@media (max-width: 1024px) {
+  .desktop-circle {
+    display: none !important;
+  }
+  .mobile-circle {
+    display: block !important;
+    max-width: 100%;
+    padding: 36px 16px;
+    text-align: center;
+  }
+  .mobile-circle img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
 .circle-section {
   padding: 30px 20px 40px 20px;
   background-size: cover;
   border-radius: 16px;
   background-position: center;
   color: white;
-  width: 1030px;
+  width: 100%;
   height: 580px;
+  max-width: 1030px;
+  margin: 0 auto;
   font-family: 'Poppins', sans-serif;
   background-image: url('../assets/circlebg.png');
-
 }
 
 .circle-heading {
@@ -208,19 +236,13 @@
 
 
 
-
-/* ===============================
-   ✅ Responsive Enhancements
-   =============================== */
-
-/* Large tablets & small laptops */
 @media (max-width: 1024px) {
-  .circlebody {
-    padding: 40px 60px 100px 60px;
+  .circlebody1{
+    padding: 40px 120px 100px 120px;
   }
 
   .circle-section {
-    width: 90%;
+    width: 100%;
     height: auto;
     padding: 25px;
   }

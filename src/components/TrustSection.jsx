@@ -1,12 +1,11 @@
 import React from 'react';
-import './TrustSection.css'; // custom styles
+import './TrustSection.css'; 
 import skillIndia from '../assets/skill-india.png';
 import nsdc from '../assets/nsdc.png';
 import startupIndia from '../assets/startup-india.png';
 import googleEd from '../assets/google-edu.png';
 import im0 from "../assets/im0.svg";
-//import im1 from "../assets/im1.svg";
-//import im2 from "../assets/im2.svg";
+
 
 const partners = [skillIndia, nsdc, startupIndia, googleEd];
 
@@ -18,7 +17,6 @@ const people = [
   { name: 'Sanchit', logo: 'dpp.png', img: 'sanchit.png' },
   { name: 'Shreyansh', logo: 'wal.png', img: 'shreyansh.png' },
   { name: 'Anurag Sinha',  logo: 'er.png', img: 'anurag.png' },
-  { name: 'Varun Acharya', logo: 'subex.png', img: 'varun.png' },
   { name: 'Shivansh Singh', logo: 'cgii.png', img: 'aashii.png' },
   { name: 'Ishan Acharya', logo: 'dicee.png', img: 'ishann.png' },
   { name: 'Rohit Pal', logo: 'game.png', img: 'rohitt.png' },

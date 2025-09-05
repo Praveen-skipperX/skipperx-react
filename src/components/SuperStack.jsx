@@ -33,9 +33,14 @@ const stackData = [
 const SuperStack = () => {
   return (
     <section className="stack-wrapper">
-      <h2 className="stack-heading">
-        Super <span className="highlight-text">Stack</span>
-      </h2>
+      <div className="best-heading-section">
+        <hr className="l" />
+        <h1>
+          Super <span className="proo">Stack </span>
+        </h1>
+        <hr className="r" />
+      </div>
+      <p className="stackland-subheading">Dive into today’s Trendiest Innovations</p>
       <div className="stack-card-container">
         {stackData.map((item, index) => (
           <Link className="navlink"

@@ -17,11 +17,11 @@
 }
 
 .highlight {
-    background: linear-gradient(to bottom, #ff7b6a, #ff4101);
+    background: linear-gradient(to right, #ff7b6a, #ff4101);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-style: italic;
-  padding-right: 0px;
+  padding-right: 5px;
 }
 
 .avabtn{
@@ -62,7 +62,7 @@
   margin-top: 10px;
 }
 .subtitlee {
-  color: #aaa;
+  color: #f4efef;
   margin-bottom: 40px;
   color: #aaa;
   font-size: 20px;
@@ -95,12 +95,13 @@
   gap: 30px;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .testimonial-left {
   flex: 1;
   text-align: left;
+  min-width: 0;
 }
 
 .testimonial-right .person-img {
@@ -203,24 +204,114 @@
   opacity: 1;
 }
 
-
+/* Mobile View - Exactly like Screenshot */
 @media (max-width: 768px) {
-  .testimonial-card {
-    flex-direction: column;
-    text-align: center;
+  .carousel-container {
+    padding: 36px 16px;
+  }
+
+  .carousel-container h2 {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .highlight{
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  .subtitlee {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+
+    .testimonial-card {
+    flex-direction: row;   /* ✅ stack like screenshot */
+    align-items: flex-start;
+    padding: 20px;
+    background: #141414;      /* remove bg image */
   }
 
   .testimonial-left {
+    width: 100%;
+    margin-bottom: 22px;
+  }
+
+  .testimonial-left .quote {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 190px;
+  }
+
+  .testimonial-left .name {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+
+  .testimonial-left .position {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .lefttt{
+    margin-top: 0px;
+  }
+  .righttt{
+    margin-top: 0px;
+  }
+  .company-logoo {
+    width: 20px;
+    height: auto;
+    margin-left: 6px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .testimonial-right {
     text-align: center;
+    width: 100%;
   }
 
-  .testimonial-right .person-img {
-    width: 160px;
+  .testimonial-right  {
+    width: 240px;
+    display: block;
+  }
+  
+  .quote{
+    width: 290px;
+  }
+
+  /* Dots below card */
+  .carousel-dots {
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+
+  /* Small avatars preview row */
+  .avatars-preview {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .avatars-preview img {
+    width: 32px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+  }
+
+  /* CTA button */
+  .avabtn {
+    margin: 0 auto;
+    display: block;
+    font-size: 15px;
+    width: 80%;
     margin-top: 20px;
+    max-width: 207px;
+    height: 46px;
   }
-
-  .line {
-    width: 60px;
-  }
+  
 }
+
 

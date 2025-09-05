@@ -7,7 +7,7 @@ import harish from '../assets/harisha.jpg'
 import sai from '../assets/saisai.png'
 import hari from '../assets/harih.jpg'
 import sakshi from '../assets/saksh.png'
-import logo from '../assets/skipper-black-new.png';
+import logo from '../assets/skipper-black.png';
 
 
 

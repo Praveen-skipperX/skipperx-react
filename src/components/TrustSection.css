@@ -1,3 +1,4 @@
+
 .trust-wrapper {
   background: #1C1C1C;
   color: white;
@@ -11,6 +12,15 @@
   font-family: Playfair Display;
   font-style: bold italic;
   margin-top: -10px;
+}
+.accredited-text em{
+background: linear-gradient(to right, #ff7b6a, #ff4101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: -10px;
+  padding-right: 4px;
 }
 
 .logo-row {
@@ -68,7 +78,7 @@
 }
 
 .trust-box .highlight {
-    background: linear-gradient(to bottom, #ff7b6a, #ff4101);
+  background: linear-gradient(to right, #ff7b6a, #ff4101);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -192,4 +202,73 @@
   object-fit: contain;
   vertical-align: top;
   height: 22px;
+}
+
+
+/* Keep your existing styles as-is */
+
+/* Mobile only adjustments */
+@media (max-width: 600px) {
+  .trust-wrapper {
+    padding: 72px 16px 36px 16px;
+  }
+
+  .people-scroll-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .people-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .logo-row{
+    margin-bottom: 72px;
+  }
+  .company-logo {
+    width: 20px;   /* shrink width */
+    height: 10px;  /* shrink height proportionally */
+    margin-top:  -15px;
+    vertical-align:top;
+    border:17px solid #ffffff;
+    border-radius: 8px;
+  }
+  .trust-box h2{
+    font-size: 26px;
+  }
+  .gr{
+    font-size: 15px;
+    line-height: 1px;
+    
+  }
+  .scroll-track {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    width: max-content;
+    scroll-snap-type: x mandatory;
+  }
+
+  .person-card {
+    flex: 0 0px 100px; /* fixed width for mobile cards */
+    background: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    height: 190px;
+    scroll-snap-align: start;
+  }
+
+  .person-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .person-name {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    padding: 6px 0 0;
+    font-family: "Poppins", sans-serif;
+  }
 }

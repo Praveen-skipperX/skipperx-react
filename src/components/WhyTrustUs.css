@@ -1,3 +1,4 @@
+
 .trust-container {
   background-color: rgb(30, 30, 30);
   color: #fff;
@@ -122,6 +123,8 @@
   text-align: justify;
   color: #ccc;
 }
+
+
 .card .pp{
   padding-left: -12px;
   font-size: 16px;
@@ -193,28 +196,6 @@
   font-weight: 600;
 }
 
-
-@media (max-width: 768px) {
-  .trust-header h2 {
-    font-size: 22px;
-  }
-
-  .trust-carousel-wrapper {
-    height: auto;
-  }
-
-  .card {
-    position: relative;
-    width: 90%;
-    transform: none !important;
-    opacity: 1 !important;
-    margin-bottom: 20px;
-    height: auto !important;
-  }
-}
-
-
-
 .trust-arrows {
   display: flex;
   justify-content: center;
@@ -238,5 +219,50 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
-
-
+@media (max-width: 768px) {
+  .trust-container{
+    padding: 36px 16px;
+  }
+  .trust-header h2{
+    font-size: 20px;
+  }
+  .trust-subtext{
+    font-size: 15px;
+    margin-bottom: 26px;
+  }
+  .trustp p{
+    font-size: 14px;
+  }
+  .avatars img{
+    width: 30px;
+    height: 30px;
+  }
+  .avatars span{
+    font-size: 13px;
+  }
+  .card{
+    width: 340px;
+    height: 300px;
+    
+  }
+  
+  .card h3{
+    font-size: 20px;
+  }
+  .card p {
+    font-size: 13px;
+  }
+  .card .pp{
+    font-size: 14px;
+    padding-left: -12px;
+  }
+  .trust-authorr img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  .trustn{
+    font-size: 16px;
+  }
+  
+}

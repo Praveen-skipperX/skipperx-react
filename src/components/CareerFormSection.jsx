@@ -9,7 +9,7 @@ const CareerFormSection = () => {
         <h2><span className="bold">Still Confused? We’ve Got You</span></h2>
         <div className="righ" />
       </div>
-      <p className="subtitle">
+      <p className="subtitle1">
         Insights from those who’ve walked the path you're about to take.
       </p>
 

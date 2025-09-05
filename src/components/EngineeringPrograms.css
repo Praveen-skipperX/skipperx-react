@@ -35,9 +35,11 @@
 }
 
 .proo{
-    color: #ff4101;
-    font-family: Playfair Display;
-    font-style: italic;
+  background: linear-gradient(to right, #ff7b6a, #ff4101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  padding-right: 2px;
 }
 .eng-badge {
   background-color: #353434;
@@ -156,21 +158,41 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .eng-section{
+    padding: 36px 1px;
+  }
   .eng-card {
     width: 100%;
-    height: auto;
+    height: 380px;
+    margin-bottom: 10px;
   }
 
   .eng-title {
-    font-size: 28px;
+    font-size: 24px;
+    margin-top: 100px;
+  }
+  .r{
+    margin-top: 5px;
+  }
+  .l{
+    margin-top: 5px;
+  }
+  .best-subheading{
+    font-size: 12px;
   }
 
   .eng-arrow-btn {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
   }
 
   .eng-quote {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .eng-testimonial{
+    width: 290px;
+  }
+  .eng-success-value{
+    margin-bottom: 5px;
   }
 }

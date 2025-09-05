@@ -134,15 +134,15 @@
 
 
 
-.login-title{
+.otp-title{
   display: block;
-  margin: 0 auto;
   width: 219px;
   height: 61px;
   margin-bottom: 26px;
-  margin-left: 55px;
-  font-family: poppins;
+  padding-left: 19px;
   margin-top: 50px;
+  margin-left: 66px;
+  font-family: poppins;
 }
 .otp-container {
   text-align: center;

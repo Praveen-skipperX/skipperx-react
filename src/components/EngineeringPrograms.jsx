@@ -46,7 +46,7 @@ const EngineeringPrograms = () => {
         </h1>
         <hr className="r" />
       </div>
-      <p className="best-subheading">Real journeys, Real breakthroughs, Real impact</p>
+      <p className="best-subheading">Dive into today’s Trendiest Innovations</p>
       <div className="eng-container">
         {programs.map((item, index) => (
           <div

@@ -6,7 +6,7 @@ import harish from '../assets/harisha.jpg'
 import sai from '../assets/saisai.png'
 import hari from '../assets/harih.jpg'
 import sakshi from '../assets/saksh.png'
-import logo from '../assets/skipper-black-new.png';
+import logo from '../assets/skipper-black.png';
 import text from '../assets/text-icon.png';
 
 
@@ -75,7 +75,7 @@ const OtpVerification = () => {
           
           
        <div className="otp-container">
-        <img src={logo} alt="Skipper Logo" className="login-title"/>
+        <img src={logo} alt="Skipper Logo" className="otp-title"/>
         <div className="otp-icon1"><img src={text} className="otp-icon"/></div>
         <h2>Check Your Inbox</h2>
         <p>

@@ -4,10 +4,13 @@ import i1 from "../assets/i1.svg";
 import i2 from "../assets/i2.svg";
 import i3 from "../assets/i3.svg";
 import i4 from "../assets/i4.svg";
+import med from "../assets/med-circle1.png";
 
 const Circle = () => {
   return (
-    <section className='circlebody'>
+  <div className="circle-section1">
+    <div className="desktop-circle">
+    <section className='circlebody1'>
       <div className="circle-section">
         <h1 className="circle-heading">
             <span className="highlightc">NSDC</span> Certification Benefits
@@ -40,6 +43,13 @@ const Circle = () => {
         </div>
         </div> 
     </section>
+    </div>
+
+     <div className="mobile-circle">
+      <img src={med} alt="Mobile View Circle" />
+      </div>
+
+    </div>
   );
 };
 

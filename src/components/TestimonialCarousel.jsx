@@ -149,7 +149,7 @@ const TestimonialCarousel = () => {
           <img src={hari} alt="avatar" />
           <img src={sakshi} alt="avatar" />
           <img src={sai} alt="avatar" />
-          <span>4K+ members have completed this program, be one of them</span>
+          <span>4K+ members have completed <br></br>this program, be one of them</span>
         </div>
         <button className="avabtn">Explore Programs</button>
       </div>

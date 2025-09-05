@@ -27,11 +27,14 @@
 }
 
 .header-line .highlight {
-  color: #ff4101;
-  font-weight: 700;
+  background: linear-gradient(to right, #ff7b6a, #ff4101);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  padding-right: 2px;
 }
 
-.subtitle {
+.subtitle2 {
   color: #aaa;
   font-size: 20px;
   margin-bottom: 56px;
@@ -154,13 +157,68 @@
 }
 
 /* 📱 Responsive */
+/* Base Grid - Desktop */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Mobile View */
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: (4,1fr); /* stack cards */
+    gap: 16px;
+  }
+
+  .header-line h2 {
+    font-size: 22px;
+  }
+
+  .subtitle2 {
+    font-size: 15px;
+    margin-bottom: 34px;
+    width: 379px;
+    padding-left: 60px;
+  }
+  .skippers-sectioned{
+    padding: 36px 16px 36px 26px;
   }
 
   .advantage-card {
+    width: 100%;
     height: auto;
-    aspect-ratio: 16/9;
+    aspect-ratio: 16/9.5; 
   }
+
+  .card-content h3 {
+    font-size: 11px;
+  }
+
+  .card-content p {
+    font-size: 8px;
+    margin-bottom: -10px;
+  }
+
+  .badge {
+    font-size: 7px;
+    padding: 4px 6px;
+    margin-top: -7px;
+  }
+  .card-4 {
+    margin-left: -40px;
+    margin-top: -10px;
+    height: 129px;
+    width: 238px;
+    padding: 0 1px;
+  }
+  .card-3{
+    width: 181px;
+    height: 129px;
+    
+  }
+
 }
+
