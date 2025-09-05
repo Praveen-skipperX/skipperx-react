@@ -4,7 +4,7 @@
     padding: 64px 120px 128px 120px;
 }
 
-<<<<<<< HEAD
+
 .desktop-circle {
   display: block;
 }
@@ -30,8 +30,7 @@
 
 
 
-=======
->>>>>>> aee7c7e8bb710e0424ee9d915216d81b78af6638
+
 .circle-section {
   padding: 30px 20px 40px 20px;
   background-size: cover;
@@ -239,13 +238,13 @@
 
 
 @media (max-width: 1024px) {
-<<<<<<< HEAD
+
   .circlebody1{
     padding: 40px 120px 100px 120px;
-=======
+
   .circlebody {
     padding: 40px 60px
->>>>>>> aee7c7e8bb710e0424ee9d915216d81b78af6638
+
   }
 
   .circle-section {
@@ -453,8 +452,4 @@
     left: 100px;
   }
 }
-
-
-
-
-
+}
