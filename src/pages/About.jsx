@@ -31,6 +31,10 @@ const teamMembers = [
 
 
 const founders = [
+<<<<<<< HEAD
+=======
+  
+>>>>>>> aee7c7e8bb710e0424ee9d915216d81b78af6638
   { name: "Sourav Kamboj", role: "Co-Founder and CEO", image: founder1 },
   { name: "Himanshu Singh", role: "Co-Founder & CMO", image: founder2 },
   { name: "Vivek Agarwal", role: "Co-Founder and COO", image: founder3 },
