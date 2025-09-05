@@ -218,9 +218,7 @@ background: linear-gradient(to right, #ff7b6a, #ff4101);
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
-  .people-scroll-wrapper::-webkit-scrollbar {
-    display: none;
-  }
+  
   .logo-row{
     margin-bottom: 72px;
   }
@@ -233,23 +231,54 @@ background: linear-gradient(to right, #ff7b6a, #ff4101);
     border-radius: 8px;
   }
   .trust-box h2{
-    font-size: 26px;
+    font-size: 21px;
+  }
+  .trust-box .highlight{
+    font-size: 20px;
+  }
+  .trust-box span{
+    font-size: 16px;
+  }
+  .trust-box .tp{
+    font-size: 14px;
   }
   .gr{
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1px;
     
   }
-  .scroll-track {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
-    width: max-content;
-    scroll-snap-type: x mandatory;
+  .strongtrust{
+    font-size: 22px;
+  }
+  .im0{
+    width: 20px;
+    height: 20px;
+  }
+  
+  .trust-stats > div {
+    flex: 1;
+    padding: 0 20px;
+    position: relative;
   }
 
+
+  .trust-stats > div:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10%;
+    bottom: 5%;
+    width: 1.6px;
+    height: 81px;
+    background: #DDE3E3; 
+    opacity: 0.5;
+  }
+
+
+
+
   .person-card {
-    flex: 0 0px 100px; /* fixed width for mobile cards */
+    flex: 0 0px 100px; 
     background: #ffffff;
     border-radius: 12px;
     text-align: center;
@@ -272,3 +301,33 @@ background: linear-gradient(to right, #ff7b6a, #ff4101);
     font-family: "Poppins", sans-serif;
   }
 }
+
+/* Existing styles remain same */
+
+/* Auto-scroll + row layout for ≤480px */
+
+/* Mobile only: ≤480px auto-scroll row wise */
+@media (max-width: 480px) {
+  .people-scroll-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+ 
+  .scroll-track {
+    display: flex;
+    flex-direction: row;   /* row layout */
+    flex-wrap: nowrap;     /* single line */
+    gap: 16px;
+    width: max-content;
+    animation: scroll-left 40s linear infinite; /* enable auto-scroll only for mobile */
+  }
+
+  .person-card {
+    flex: 0 0 auto;
+    width: 120px;
+    height: 190px;
+    scroll-snap-align: start;
+  }
+}
+

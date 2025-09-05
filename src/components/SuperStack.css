@@ -155,7 +155,7 @@
 
 @media (max-width: 768px) {
   .stack-wrapper{
-    padding: 36px 16px 36px 20px;
+    padding: 36px 16px 36px 26px;
   }
   .stackland-subheading{
     font-size: 14px;
@@ -173,7 +173,7 @@
   }
 
   .stack-box {
-    width: 150%;
+    width: 120%;
     height: 320px;
   }
 

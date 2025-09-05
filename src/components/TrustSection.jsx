@@ -40,9 +40,9 @@ const TrustSection = () => {
         <p><span className="tp">Who choose Skipperx to upskill, pivot, and lead in the modern workplace.</span></p>
 
         <div className="trust-stats">
-          <div><strong >4.8 <img src={im0} className="im0" /></strong><br /><span className="gr">Google Rating</span></div>
-          <div><strong > 50K+</strong><br /><span className="gr">Mentees Trained</span></div>
-          <div><strong > 42%</strong><br /><span className="gr">Career Switchers</span></div>
+          <div><strong className="strongtrust">4.8 <img src={im0} className="im0" /></strong><br /><span className="gr">Google Rating</span></div>
+          <div><strong className="strongtrust"> 50K+</strong><br /><span className="gr">Mentees Trained</span></div>
+          <div><strong className="strongtrust"> 42%</strong><br /><span className="gr">Career Switchers</span></div>
         </div>
 
 

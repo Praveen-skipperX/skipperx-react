@@ -207,15 +207,16 @@
 /* Mobile View - Exactly like Screenshot */
 @media (max-width: 768px) {
   .carousel-container {
-    padding: 36px 16px;
+    padding: 36px 20px;
   }
 
   .carousel-container h2 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1;
+    width: 370px;
   }
   .highlight{
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1;
   }
 
@@ -240,18 +241,20 @@
   .testimonial-left .quote {
     font-size: 14px;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 190px;
   }
 
   .testimonial-left .name {
     font-size: 15px;
     margin-bottom: 14px;
+    width: 190px;
   }
 
   .testimonial-left .position {
     font-size: 13px;
     margin-bottom: 8px;
+    width: 190px;
   }
   .lefttt{
     margin-top: 0px;
@@ -273,7 +276,7 @@
   }
 
   .testimonial-right  {
-    width: 240px;
+    width: 210px;
     display: block;
   }
   
