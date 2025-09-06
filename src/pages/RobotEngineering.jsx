@@ -1,23 +1,24 @@
-import React, { useState, useEffect, useRef} from "react";
-import './RobotEngineering.css';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import bgImage from '../assets/robot-hero-bg.png';
-import bulbIcon from '../assets/holding-bulb.png';
-import harish from '../assets/harisha.jpg';
-import sai from '../assets/sai.jpg';
-import hari from '../assets/harih.jpg';
-import sakshi from '../assets/saksh.png';
+import { useEffect, useRef, useState } from "react";
 import certificateDisplay from "../assets/dcerti.png";
-import suresh from "../assets/suresh.png";
-import soumya from "../assets/soumya.png";
-import vishal from "../assets/vishal.png";
-import faqarrow from "../assets/faqarrow.png";
 import brochureImage from "../assets/drone-brochure.png";
+import eightseven from "../assets/eight-seven.png";
+import faqarrow from "../assets/faqarrow.png";
+import hari from '../assets/harih.jpg';
+import harish from '../assets/harisha.jpg';
+import bulbIcon from '../assets/holding-bulb.png';
 import nineeight from "../assets/nine-eight.png";
 import nineseven from "../assets/nine-seven.png";
-import eightseven from "../assets/eight-seven.png";
+import bgImage from '../assets/robot-hero-bg.png';
 import roborreviewlogo from "../assets/robot-review-logo.png";
+import sai from '../assets/sai.jpg';
+import sakshi from '../assets/saksh.png';
+import soumya from "../assets/soumya.png";
+import suresh from "../assets/suresh.png";
+import vishal from "../assets/vishal.png";
+import Footer from '../components/Footer';
+import GoogleSheetForm from '../components/GoogleSheetForm';
+import Navbar from '../components/Navbar';
+import './RobotEngineering.css';
 
 
 
@@ -135,7 +136,6 @@ const RobotEngineering = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
 
-    return () => clearInterval(interval);
   }, []);
 
 
@@ -542,39 +542,20 @@ const RobotEngineering = () => {
 
          {showForm && (
           <div className={`drone-form-wrapper ${showForm ? 'visible' : 'hidden'}`}>
-           <div className="drone-form">
-            <div
-              ref={cardRef}
-              className="drone-pricing-card"
-              style={{
-                position: isFixed ? "fixed" : "sticky",
-                top: isFixed ? `0px` : "0px",
-                zIndex: 10,
-              }}
-            >
-              <h3 className="drone-form-title">Master Robot Engineering Program</h3>
-
-              <form className="drone-form-fields">
-                <input type="text" placeholder="First Name*" required />
-                <input type="email" placeholder="E-mail*" required />
-                <input type="text" placeholder="College name*" required />
-                
-                <select required>
-                  <option value="">Interest*</option>
-                  <option value="Beginner">Beginner</option>
-                  <option value="Intermediate">Intermediate</option>
-                  <option value="Advanced">Advanced</option>
-                </select>
-
-                <div className="phone--input">
-                  <span className="country--code">+91</span>
-                  <input type="tel" placeholder="XXXXXXXXXX" required />
-                </div>
-
-                <button type="submit" className="form-submit-btn">Start Learning</button>
-              </form>
+            <div className="drone-form">
+              <div
+                ref={cardRef}
+                className="drone-pricing-card"
+                style={{
+                  position: isFixed ? "fixed" : "sticky",
+                  top: isFixed ? `0px` : "0px",
+                  zIndex: 10,
+                }}
+              >
+                <h3 className="drone-form-title">Master Robot Engineering Program</h3>
+                <GoogleSheetForm formName="RobotEngineering" />
+              </div>
             </div>
-           </div>
           </div>
          )}
 

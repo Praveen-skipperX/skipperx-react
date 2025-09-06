@@ -1,31 +1,20 @@
 
 
-import React, { useState, useEffect, useRef} from "react";
-import "./CreatorsHub.css";
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import bulbIcon from '../assets/holding-bulb.png';
-import hubroadmap from '../assets/creative.png';
-import nineeight from "../assets/97.png";
-import nineseven from "../assets/91.png";
+import { useEffect, useRef, useState } from "react";
 import eightseven from "../assets/88.png";
+import nineseven from "../assets/91.png";
+import nineeight from "../assets/97.png";
+import hubroadmap from '../assets/creative.png';
 import css from '../assets/css.png';
-import tf from '../assets/tf.png';
-import mat from '../assets/mat.png';
-import vs from '../assets/vs.png';
-import node from '../assets/node.png';
-import up from '../assets/up.png';
-import sl from '../assets/sl.png';
-import pan from '../assets/pan.png';
-import sea from '../assets/sea.png';
-import num from '../assets/num.png';
-import jup from '../assets/jup.png';
 import brochureImage from "../assets/drone-brochure.png";
 import faqarrow from "../assets/faqarrow.png";
-import harish from '../assets/harisha.jpg';
-import sai from '../assets/sai.jpg';
 import hari from '../assets/harih.jpg';
-import sakshi from '../assets/saksh.png';
+import harish from '../assets/harisha.jpg';
+import bulbIcon from '../assets/holding-bulb.png';
+import jup from '../assets/jup.png';
+import mat from '../assets/mat.png';
+import node from '../assets/node.png';
+import num from '../assets/num.png';
 import p1 from '../assets/p1.png';
 import p2 from '../assets/p2.png';
 import p3 from '../assets/p3.png';
@@ -35,6 +24,18 @@ import p6 from '../assets/p6.png';
 import p7 from '../assets/p7.png';
 import p8 from '../assets/p8.png';
 import p9 from '../assets/p9.png';
+import pan from '../assets/pan.png';
+import sai from '../assets/sai.jpg';
+import sakshi from '../assets/saksh.png';
+import sea from '../assets/sea.png';
+import sl from '../assets/sl.png';
+import tf from '../assets/tf.png';
+import up from '../assets/up.png';
+import vs from '../assets/vs.png';
+import Footer from '../components/Footer';
+import GoogleSheetForm from '../components/GoogleSheetForm';
+import Navbar from '../components/Navbar';
+import "./CreatorsHub.css";
 
 import p1l from '../assets/p1l.png';
 import p2l from '../assets/p2l.png';
@@ -364,39 +365,20 @@ const CreatorsHub = () => {
 
          {showForm && (
           <div className={`startup-form-wrapper ${showForm ? 'visible' : 'hidden'}`}>
-           <div className="startup-form">
-            <div
-              ref={cardRef}
-              className="startup-pricing-card"
-              style={{
-                position: isFixed ? "fixed" : "sticky",
-                top: isFixed ? `0px` : "0px",
-                zIndex: 10,
-              }}
-            >
-              <h3 className="startup-form-title">Master Creators Hub</h3>
-
-              <form className="startup-form-fields">
-                <input type="text" placeholder="First Name*" required />
-                <input type="email" placeholder="E-mail*" required />
-                <input type="text" placeholder="College name*" required />
-                
-                <select required>
-                  <option value="">Interest*</option>
-                  <option value="Beginner">Beginner</option>
-                  <option value="Intermediate">Intermediate</option>
-                  <option value="Advanced">Advanced</option>
-                </select>
-
-                <div className="startup-phone--input">
-                  <span className="startup-country--code">+91</span>
-                  <input type="tel" placeholder="XXXXXXXXXX" required />
-                </div>
-
-                <button type="submit" className="startup-form-submit-btn">Start Learning</button>
-              </form>
+            <div className="startup-form">
+              <div
+                ref={cardRef}
+                className="startup-pricing-card"
+                style={{
+                  position: isFixed ? "fixed" : "sticky",
+                  top: isFixed ? `0px` : "0px",
+                  zIndex: 10,
+                }}
+              >
+                <h3 className="startup-form-title">Master Creators Hub</h3>
+                <GoogleSheetForm formName="CreatorsHub" />
+              </div>
             </div>
-           </div>
           </div>
          )}
 

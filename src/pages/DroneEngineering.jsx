@@ -1,23 +1,24 @@
-import React, { useState, useEffect, useRef} from "react";
-import './DroneEngineering.css';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import bgImage from '../assets/dronebg.png';
-import bulbIcon from '../assets/holding-bulb.png';
-import harish from '../assets/harisha.jpg';
-import sai from '../assets/sai.jpg';
-import hari from '../assets/harih.jpg';
-import sakshi from '../assets/saksh.png';
-import certificateDisplay from "../assets/dcerti.png";
-import droneBg from "../assets/drone-bg-image.png";
-import suresh from "../assets/suresh.png";
-import soumya from "../assets/soumya.png";
-import vishal from "../assets/vishal.png";
-import faqarrow from "../assets/faqarrow.png";
-import brochureImage from "../assets/drone-brochure.png";
-import nineseven from "../assets/97.png";
+import { useEffect, useRef, useState } from "react";
 import eigth from "../assets/88.png";
 import nineone from "../assets/91.png";
+import nineseven from "../assets/97.png";
+import certificateDisplay from "../assets/dcerti.png";
+import droneBg from "../assets/drone-bg-image.png";
+import brochureImage from "../assets/drone-brochure.png";
+import bgImage from '../assets/dronebg.png';
+import faqarrow from "../assets/faqarrow.png";
+import hari from '../assets/harih.jpg';
+import harish from '../assets/harisha.jpg';
+import bulbIcon from '../assets/holding-bulb.png';
+import sai from '../assets/sai.jpg';
+import sakshi from '../assets/saksh.png';
+import soumya from "../assets/soumya.png";
+import suresh from "../assets/suresh.png";
+import vishal from "../assets/vishal.png";
+import Footer from '../components/Footer';
+import GoogleSheetForm from '../components/GoogleSheetForm';
+import Navbar from '../components/Navbar';
+import './DroneEngineering.css';
 
 
 
@@ -59,6 +60,8 @@ const DroneEngineering = () => {
   };
   
   const [showForm, setShowForm] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [toast, setToast] = useState({ show: false, message: '', type: '' });
 
   const handlePricingClick = () => {
     setShowForm(true);
@@ -138,7 +141,6 @@ const DroneEngineering = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
 
-     return () => clearInterval(interval);
     
  }, []);
 
@@ -559,27 +561,7 @@ const DroneEngineering = () => {
                   <h3 className="drone-form-title">
                     Master Drone Engineering Program
                   </h3>
-                  <form className="drone-form-fields">
-                    <input type="text" placeholder="First Name*" required />
-                    <input type="email" placeholder="E-mail*" required />
-                    <input type="text" placeholder="College name*" required />
-                    <select required>
-                      <option value="">Interest*</option>
-                      <option value="Beginner">Beginner</option>
-                      <option value="Intermediate">Intermediate</option>
-                      <option value="Advanced">Advanced</option>
-                    </select>
-                    <div className="phone--input">
-                      <span className="country--code">+91</span>
-                      <input type="tel" placeholder="XXXXXXXXXX" required />
-                    </div>
-                    <button
-                      type="submit"
-                      className="form-submit-btn"
-                    >
-                      Start Learning
-                    </button>
-                  </form>
+                   <GoogleSheetForm formName="DroneEngineering" />
                 </div>
               </div>
             </div>

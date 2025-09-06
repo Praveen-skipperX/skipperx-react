@@ -1,24 +1,24 @@
-import React, { useState, useEffect, useRef} from "react";
-import './Ar-Vr.css';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import bgImage from '../assets/arvr-hero.png';
-import bulbIcon from '../assets/holding-bulb.png';
-import harish from '../assets/harisha.jpg';
-import sai from '../assets/sai.jpg';
-import hari from '../assets/harih.jpg';
-import sakshi from '../assets/saksh.png';
-import certificateDisplay from "../assets/dcerti.png";
-import droneBg from "../assets/drone-bg-image.png";
-import suresh from "../assets/suresh.png";
-import soumya from "../assets/soumya.png";
-import vishal from "../assets/vishal.png";
-import faqarrow from "../assets/faqarrow.png";
-import brochureImage from "../assets/drone-brochure.png";
-import nineeight from "../assets/98.png";
-import nineseven from "../assets/97.png";
+import { useEffect, useRef, useState } from "react";
 import eightseven from "../assets/87.png";
+import nineseven from "../assets/97.png";
+import nineeight from "../assets/98.png";
+import bgImage from '../assets/arvr-hero.png';
 import arvrreviewlogo from "../assets/arvr-r-logo.png";
+import certificateDisplay from "../assets/dcerti.png";
+import brochureImage from "../assets/drone-brochure.png";
+import faqarrow from "../assets/faqarrow.png";
+import hari from '../assets/harih.jpg';
+import harish from '../assets/harisha.jpg';
+import bulbIcon from '../assets/holding-bulb.png';
+import sai from '../assets/sai.jpg';
+import sakshi from '../assets/saksh.png';
+import soumya from "../assets/soumya.png";
+import suresh from "../assets/suresh.png";
+import vishal from "../assets/vishal.png";
+import Footer from '../components/Footer';
+import GoogleSheetForm from '../components/GoogleSheetForm';
+import Navbar from '../components/Navbar';
+import './Ar-Vr.css';
 
 
 
@@ -139,7 +139,6 @@ const ArVr = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
 
-     return () => clearInterval(interval);
     
  }, []);
 
@@ -547,13 +546,10 @@ const ArVr = () => {
 
           {showForm && (
             <div
-              className={`drone-form-wrapper ${
-                showForm ? "visible" : "hidden"
-              }`}
+              className={`drone-form-wrapper ${showForm ? "visible" : "hidden"}`}
             >
-              
               <div className="drone-form">
-              <div
+                <div
                   ref={cardRef}
                   className="drone-form-card"
                   style={{
@@ -562,30 +558,8 @@ const ArVr = () => {
                     zIndex: 10,
                   }}
                 >
-                  <h3 className="drone-form-title">
-                    Master AR VR Program
-                  </h3>
-                  <form className="drone-form-fields">
-                    <input type="text" placeholder="First Name*" required />
-                    <input type="email" placeholder="E-mail*" required />
-                    <input type="text" placeholder="College name*" required />
-                    <select required>
-                      <option value="">Interest*</option>
-                      <option value="Beginner">Beginner</option>
-                      <option value="Intermediate">Intermediate</option>
-                      <option value="Advanced">Advanced</option>
-                    </select>
-                    <div className="phone--input">
-                      <span className="country--code">+91</span>
-                      <input type="tel" placeholder="XXXXXXXXXX" required />
-                    </div>
-                    <button
-                      type="submit"
-                      className="form-submit-btn"
-                    >
-                      Start Learning
-                    </button>
-                  </form>
+                  <h3 className="drone-form-title">Master AR VR Program</h3>
+                  <GoogleSheetForm formName="ARVR" />
                 </div>
               </div>
             </div>
